@@ -1,0 +1,23 @@
+{
+  "name": "zeroses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./node_modules/gupshup-botrunner/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/gupshup-local-botrunner/index.js",
+    "deploy": "node ./node_modules/gupshup-local-botrunner/deploy.js"
+  },
+  "author": {
+    "name": "Zero",
+    "email": "helpdesk_ses@pih.org",
+    "url": ""
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@gupshup-io/gupshup-onedirect": "^1.0.17",
+    "bot-script": "^3.6.4",
+    "googleapis": "^109.0.1",
+    "gupshup-local-botrunner": "^1.6.8"
+  }
+}

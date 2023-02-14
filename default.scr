@@ -1,0 +1,753 @@
+[main]
+   labelmain_bot1:👋🤩 Bienvenido(a) a los cursos de Socios en Salud:continue
+		labelmain_bot2:Para mejorar tu experiencia, dime, ¿cuál es tu nombre?\n\n✍️ *Escribe tu nombre.*
+				labelmain_user1:
+					labelmain_bot3:😁 Gracias estimado/a participante. Usaré ese nombre de ahora en adelante, ¿estás de acuerdo? [[Sí, No]]
+						labelmain_user2:No 2
+							labelmain_bot4:🤔 Descuida, vamos a solucionarlo.:goto labelmain_bot1
+						labelmain_user3:Sí 1
+							labelmain_bot5:🤩 Perfecto, estimado/a participante. ¡Qué lindo es tu nombre!:continue
+								labelmain_bot6:🤖💬 Para darte acceso a los cursos, por favor, *escribe* tu número de DNI.
+									labelmain_user4:
+										labelmain_bot7:¡Excelente! Gracias por registrarte🎉\n¡Continuemos!:call default.ListaRutas
+
+[ListaRutas]
+	labellr_bot:estimado/a participante Estos son las rutas a las que puedes acceder el día de hoy:\n\nRUTA 1️⃣ - *Fisiología respiratoria básica - Intercambio de gases*\nRUTA 2️⃣ - *Fisiopatología respiratoria básica - Hipoxemia*\nRUTA 3️⃣ - *Insuficiencia respiratoria, injuria pulmonar, SDRA y Covid 19*\nRUTA 4️⃣ - *Pautas del manejo inicial de oxígeno en la injuria pulmonar por Covid 19*\nRUTA 5️⃣ - *Herramientas básicas para el uso clínico de oxígeno*\n\nEscribe el número de la ruta que te gustaría llevar ✏
+		labellr_user1:1
+			labellr_bot1:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.Ruta1
+		labellr_user2:2
+			labellr_bot2:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.Ruta2
+		labellr_user3:3
+			labellr_bot3:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.Ruta3
+		labellr_user4:4
+			labellr_bot4:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.Ruta4
+		labellr_user5:5
+			labellr_bot5:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.Ruta5
+
+[Ruta1]
+	labelr1_bot1: Estos son los cursos que componen la Ruta 1:\n\n1️⃣ *PULMONES, RESPIRACIÓN Y OXÍGENO AMBIENTAL*\n2️⃣ *LEYES FÍSICAS, ECUACIÓN DE GAS ALVEOLAR Y SU IMPORTANCIA CLÍNICA*\n3️⃣ *EL CONCEPTO DE VENTILACIÓN/PERFUSIÓN*\n4️⃣ *HEMOGLOBINA Y EL TRANSPORTE DEL OXÍGENO A LOS TEJIDOS*\n5️⃣ *EVALUACIÓN*\n\nEscribe el número de la ruta que te gustaría llevar ✏
+		labelr1_user1:1
+			labellr_bot1:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R1Curso1
+		labelr1_user2:2
+			labellr_bot2:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R1Curso2
+		labelr1_user3:3
+			labellr_bot3:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R1Curso3
+		labelr1_user4:4
+			labellr_bot4:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R1Curso4
+		labelr1_user5:5
+			labellr_bot5:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R1Evaluacion
+			
+[R1Curso1]
+   labelc1_bot1:Bienvenido al curso 1️⃣ *PULMONES, RESPIRACIÓN Y OXÍGENO AMBIENTAL*:continue
+		labelc1_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 1","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc1_user1:Empezar Tema 1 1
+				labelc1_bot3:¡Genial! Empecemos ahora mismo 😎:continue
+					labelc1_bot4:{"name":"quickreply","type":"quick_reply","alias":"Funciones","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"1️⃣  *LA IMPORTANCIA DE LOS PULMONES Y LA RESPIRACIÓN* 🫁😮‍💨\n\nestimado/a participante, ¿cuántas funciones primordiales crees que cumplen nuestros pulmones?"},"options":[{"type":"text","title":"2","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"5","iconurl":"","id":"81sae8e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+						labelc1_user2:2 1
+							labelc1_bot5:✅ ¡Perfecto, estimado/a participante! 🤩 Nuestros pulmones cumplen dos funciones: \n*1.* Absorción de oxígeno \n*2.* Remover dióxido de carbono\n\n✍️ Escribe *OK* para continuar. 
+								labelc1_user4:Ok|OK|ok|Oka|oka|Oki|oki
+									labelc1_bot6:¡Sigamos!:goto labelc1_user5
+						labelc1_user3:5 2
+							labelc1_bot7:Estamos aquí para aprender 🤓. estimado/a participante, nuestros pulmones cumplen dos funciones: \n*1.* Absorción de oxígeno \n*2.* Remover dióxido de carbono \n\n✍️ Escribe *OK* para continuar. 
+								labelc1_user5:Ok|OK|ok|Oka|oka|Oki|oki
+									labelc1_bot8:{"name":"quickreply","type":"quick_reply","alias":"Oxigeno","msgid":"514a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤖💬 estimado/a participante, *¿sabías qué...?*\nEl aire ambiental en la atmósfera está compuesto por:\n\n✅ Nitrógeno (78%)\n✅ Oxígeno (21%)\n✅ Gases pesados y otros 1% (Argón, dióxido de carbono, vapor de agua, etc.)\n\nEsta composición *no varía con la altura*"},"options":[{"type":"text","title":"Ya veo","iconurl":"","id":"91cae4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+										labelc1_user6:Ya veo 1
+											labelc1_bot9:{"name":"quickreply","type":"quick_reply","alias":"Oxigeno","msgid":"414a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"Por otro lado, la atmósfera se mantiene como una mezcla de gases sin variación (21% de oxígeno) hasta los 11 km de altura. 🤖💬 Esta masa de aire produce una presión *(presión barométrica)* que será *importante en la respiración*."},"options":[{"type":"text","title":"¿ESTA PRESIÓN VARÍA?","iconurl":"","id":"91cae4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+												labelc1_user7:¿ESTA PRESIÓN VARÍA? 1
+													labelc1_bot10:{"name":"quickreply","type":"quick_reply","alias":"Oxigeno","msgid":"415a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"Sí estimado/a participante, si bien la composición no varía, la presión sí lo hace con la altura y es muy importante en los procesos de intercambio de gases a nivel pulmonar."},"options":[{"type":"text","title":"ENTIENDO🤓","iconurl":"","id":"91cae4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+														labelc1_user8:ENTIENDO🤓 1
+															labelc1_bot11:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"545673db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"👏🏼 estimado/a participante, has terminado con éxito el tema *1️⃣ Pulmones, respiración y oxígeno ambiental* ¡Felicitaciones! 🥳\n\n_*100 % de progreso*_██████████"},"options":[{"type":"text","title":"GRACIAS🤓","iconurl":"","id":"91cae4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+																labelc1_user9:GRACIAS🤓 1
+																	labelc1_bot12:🤖💬 estimado/a participante, ¿a dónde quieres ir? [[Menú Principal, Siguiente Tema]]
+																		labelc1_user10:Menú Principal 1
+																			labelc1_bot13:¡Vamos!:call default.ListaRutas
+																		labelc1_user11:Siguiente Tema 2
+																			labelc1_bot14:¡Vamos!:call default.R1Curso2			
+
+[R1Curso2]
+	labelc2_bot1:Bienvenido al curso 2️⃣ *LEYES FÍSICAS, ECUACIÓN DE GAS ALVEOLAR Y SU IMPORTANCIA CLÍNICA*:continue
+		labelc2_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 2","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc2_user1:Empezar Tema 2 1
+				labelc2_bot3:¡Genial! Empecemos ahora mismo 😎:continue
+					labelc2_bot4:{"name":"quickreply","type":"quick_reply","alias":"Funciones","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"*¿CÓMO LLEGA EL OXÍGENO A LA SANGRE🩸?*\n\nestimado/a participante, a nivel del alveolo el intercambio de gases _(oxígeno, dióxido de carbono)_ ocurre por difusión simple. 🔃🫁🩸\n\n*La difusión del oxígeno* a través de la membrana alveolo capilar *dependerá de la gradiente* _(diferencia de presiones)_ entre el alveolo y los capilares, el grosor de la membrana y su superficie total _(Ley de Fick)_. ?"},"options":[{"type":"text","title":"CONTINUAR","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"VER EJEMPLO","iconurl":"","id":"81sae8e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+						labelc2_user2:VER EJEMPLO 2
+							labelc2_bot5:✍️ En la siguiente imagen lo entenderás mejor, escribe *OK* cuando termines de visualizar.:continue
+								labelc2_bot6:https://drive.google.com/file/d/1y4qOyRg6SrH2UKqnEQ3K2LRGdXBuIClv/view
+									labelc2_user3:Ok|OK|ok|Oka|oka|Oki|oki
+										labelc2_bot7:¡Sigamos!🤓:goto labelc2_user4
+						labelc2_user4:CONTINUAR 1
+							labelc2_bot8:🤖💬 estimado/a participante, ¿sabes cuánto es la presión del oxígeno a nivel alveolar? [[Sí, No]]
+								labelc2_user5:Sí 1
+									labelc2_bot9:🤩 ¡Perfecto! Recordemos que::goto labelc2_bot10
+								labelc2_user6:No 2
+									labelc2_bot10:😁 estimado/a participante, estamos aquí para aprender.:continue
+										labelc2_bot11: {"name":"quickreply","type":"quick_reply","alias":"Funciones","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"La presión del volumen de un gas es igual a la *suma de los gases que lo componen* _(Ley de Dalton)._\n\n🌬️ 🌊 Por ello la presión de oxígeno en la atmósfera a nivel del mar es: \n*760 mmHg x 0.21 = 160 mmHg*"},"options":[{"type":"text","title":"YA VEO","iconurl":"","id":"61csd4e6-a687-8944-bfd3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"LO SÉ","iconurl":"","id":"81saec36-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+											labelc2_user7:YA VEO 1
+												labelc2_bot12: ¡Así es! 🙌:goto labelc2_user8
+											labelc2_user8:LO SÉ 2
+												labelc2_bot13:🚨 Sin embargo, a nivel alveolar hay que tomar algunas consideraciones.[[¿COMO CUÁLES?]]
+													labelc2_user9:¿COMO CUÁLES? 1
+														labelc2_bot14:estimado/a participante, el alveolo es una estructura microscópica.  🤏🔬[[LO SÉ, ENTIENDO]]
+															labelc2_user10:LO SÉ 1
+																labelc2_bot15:¡Perfecto! Entonces amb@s sabemos que un alvelo se mira así ⬇️:goto labelc2_bot16
+															labelc2_user11:ENTIENDO 2
+																labelc2_bot16:👀 Mira estimado/a participante, te presento a un alveolo ⬇️:continue
+																	labelc2_bot17:https://drive.google.com/file/d/1EFiWbBZqQiJvxYTeURgLwQY6l6FEbjfo/view :continue
+																		labelc2_bot18:✍️ Cuando termines de visualizar, escribe *OK*
+																			labelc2_user12:Ok|OK|ok|Oka|oka|Oki|oki
+																				labelc2_bot19:{"name":"quickreply","type":"quick_reply","alias":"Funciones","msgid":"e15a33db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤖💬 A diferencia del aire ambiental, en el alveolo otros gases *“compiten con el oxígeno”*\n🏃🏻🏃🏻🏃🏻🏃🏻‍♀️.\n\nAdemás el *alveolo no es una estructura estática*, debido a que el oxígeno entra y sale permanentemente, el alveolo permanece “inflado” (como un inflable de cumpleaños) 🎈."},"options":[{"type":"text","title":"TIENES RAZÓN 😯","iconurl":"","id":"61csd4e6-a687-8944-bfd3-118a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"ENTIENDO 🤔","iconurl":"","id":"81saec36-a687-1101-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+																					labelc2_user13:TIENES RAZÓN 😯 1
+																						labelc2_bot20:🤖💬 estimado/a participante, a continuación veamos la \n*ECUACIÓN DE GASES ALVEOLARES*:goto labelc2_bot21
+																					labelc2_user14:ENTIENDO 🤔 2
+																						labelc2_bot21:🤖💬 estimado/a participante, a continuación veamos la \n*ECUACIÓN DE GASES ALVEOLARES*:continue
+																							labelc2_bot22:{"name":"quickreply","type":"quick_reply","alias":"Funciones","msgid":"e15a33db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"*Presión de aire que entra al alveolo* 💨➡️🫁🔎🔅\n\nEl aire que entra al alveolo tiene una *presión parcial de vapor de agua*. A 37ºC de temperatura la presión parcial de vapor de agua _(similar a la “humedad relativa” es de *47 mmHg*)_.\n\n🤖💬 Por tanto la presión de oxígeno que llega al alveolo será:\n*0.21(760 mmHg-47 mmHg)=*\n*150 mmHg*"},"options":[{"type":"text","title":"CONTINUAR","iconurl":"","id":"61csd4e6-a687-8944-bfd3-118a2111c52d","isDuplicate":false,"name":"user"}]}
+																								labelc2_user15:CONTINUAR 1
+																									labelc2_bot23:{"name":"quickreply","type":"quick_reply","alias":"Funciones","msgid":"e15a33db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🔅➡️💨 *Presión de aire que sale del alveolo*\n\nEl oxígeno difunde hacia los capilares de manera constante de acuerdo a las necesidades metabólicas.\n\nSe puede saber cuánto oxígeno se consume _(por tanto pasa hacia los capilares)_ para producir una cantidad determinada de dióxido de carbono.\n\n🤖💬 A esto se le conoce como *cociente de intercambio respiratorio (RER o RQ)*."},"options":[{"type":"text","title":"CONTINUAR","iconurl":"","id":"61csdss6-a687-8944-bfd3-118a2111c52d","isDuplicate":false,"name":"user"}]}
+																										labelc2_user16:CONTINUAR 1
+																											labelc2_bot24:En la siguiente imagen podrás visualizar la *ecuación de gas alveolar*.⬇️ ✍️ Puedes escribir *OK* luego de ver la imagen.:continue
+																												labelc2_bot25:https://drive.google.com/file/d/16Sldx0sa8iNZdKEEusaPFUC27j4lkDH_/view
+																													labelc2_user17:Ok|OK|ok|Oka|oka|Oki|oki
+																														labelc2_bot26:estimado/a participante, de la ecuación se deduce que respirar rápido puede disminuir el dióxido de carbono y las cámaras hiperbáricas pueden también mejorar el PAO2.[[ENTIENDO😲]]
+																															labelc2_user18:ENTIENDO😲 1
+																																labelc2_bot27:estimado/a participante, *la presión parcial de oxígeno a nivel del alveolo se afecta* por la fracción de oxígeno que respiramos _(FiO2)_, la presión atmosférica, la presión de vapor de agua _(temperatura)_ y la cantidad de dióxido de carbono que exhalamos.[[CONTINUAR]]
+																																	labelc2_user19:CONTINUAR 1
+																																		labelc2_bot28:🤖💬 Para mejorar la presión parcial de oxígeno podemos darlo *suplementariamente* mediante dispositivos de *oxigeno medicinal*.[[ENTIENDO🤓]]
+																																			labelc2_user20:ENTIENDO🤓 1
+																																				labelc2_bot29:{"name":"quickreply","type":"quick_reply","alias":"Funciones","msgid":"e15bb3db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"👏🏼 estimado/a participante, has terminado con éxito el tema *2️⃣ Leyes físicas, ecuación de gas alveolar y su importancia clínica*. ¡Ya vamos a la mitad del la ruta de aprendizaje! Sigue así estimado/a participante. ☺️\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"¡GENIAL! 🥳","iconurl":"","id":"61csdss6-a687-8234-bfd3-118a2111c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"OK","iconurl":"","id":"61csdss6-a687-8234-bfd3-118a2111c52d","isDuplicate":false,"name":"user"}]}
+																																					labelc2_user21:OK 2
+																																						labelc2_bot30:✅ Tú progreso se guardó con éxito, ahora puedes continuar al curso *"3️⃣ El concepto de Ventilación y Perfusión"* de la ruta 1.:goto labelc2_bot31
+																																					labelc2_user22:¡GENIAL! 🥳 1
+																																						labelc2_bot31:✅ Tú progreso se guardó con éxito, ahora puedes continuar al curso *"3️⃣ El concepto de Ventilación y Perfusión"* de la ruta 1.:continue
+																																								labelc2_bot32:🤖💬 estimado/a participante, ¿a dónde quieres ir?[[MENÚ PRINCIPAL, SIGUIENTE TEMA]]
+																																									labelc2_user23:MENÚ PRINCIPAL 1
+																																										labelc2_bot33:¡Vamos!:call default.ListaRutas
+																																									labelc2_user24:SIGUIENTE TEMA 2
+																																										labelc2_bot34:¡Vamos!:call default.R1Curso3
+			
+[R1Curso3]
+   labelc3_bot1:Bienvenido al curso 3️⃣ *EL CONCEPTO DE VENTILACIÓN/PERFUSIÓN*:continue
+		labelc3_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 3","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc3_user1:Empezar Tema 3 1
+				labelc3_bot3:¡Genial! Empecemos ahora mismo 😎:continue
+					labelc3_bot4:🤖💬 estimado/a participante, ¿sabes qué relación hay entre ventilación/perfusión (V/Q)? [[Sí, No]]
+						labelc3_user2:No 2
+							labelc3_bot5:🤖💬 Conozcamos junt@s esta relación ⬇️:goto labelc3_bot6
+						labelc3_user3:Sí 1
+							labelc3_bot6:¡Muy bien, estimado/a participante! ⭐ Recordemos junt@s esta relación ⬇️:continue
+								labelc3_bot7:{"name":"quickreply","type":"quick_reply","alias":"V/C","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"✌️ *Ventilación (V):*\nEs la cantidad de gases que entran y salen de los pulmones.\n\n🩸 *Perfusión (Q):*\nEs la cantidad de sangre que entra y sale de los pulmones donde se produce el intercambio de gases.\n\n🤖💬 estimado/a participante, el *balance* entre la ventilación y la perfusión genera un intercambio de gases apropiado, si esta relación se altera, *se producirá un problema oxigenatorio*."},"options":[{"type":"text","title":"CONTINUAR","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2822c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"ENTIENDO🤓","iconurl":"","id":"61csd4e6-2287-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+									labelc3_user4:CONTINUAR 1
+										labelc3_bot8:🤓 estimado/a participante, para entenderlo mucho mejor, mira el siguiente video: *UCO - Concepto de ventilación perfusión* ⬇️.\n\nCuando termines de visualizar, ✍️ escribe *OK* para continuar.:goto labelc3_bot9
+									labelc3_user5:ENTIENDO🤓 2
+										labelc3_bot9:🤓 estimado/a participante, para entenderlo mucho mejor, mira el siguiente video: *UCO - Concepto de ventilación perfusión* ⬇️.\n\nCuando termines de visualizar, ✍️ escribe *OK* para continuar.:continue
+											labelc3_bot10:https://youtu.be/j_2j4iTgQV0
+												labelc3_user6:Ok|OK|ok
+													labelc3_bot11:{"name":"quickreply","type":"quick_reply","alias":"Recordemos","msgid":"555a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤖💬 *RECORDEMOS*\n\n▪️Factores como la gravedad y el grosor de los vasos sanguíneos determinan el V/Q de cada zona.\n\n▪️En personas sanas esto es compensado para que la suma total se encuentre apropiadamente balanceada."},"options":[{"type":"text","title":"OK","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2822c500","isDuplicate":false,"name":"user"}]}
+														labelc3_user7:OK 1
+															labelc3_bot12:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"e15a44db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🥳 estimado/a participante, has terminado con éxito el tema *3️⃣ El concepto de Ventilación y Perfusión*. 🤩 ¡Ya falta poco para culminar la ruta de aprendizaje! Sigue así.\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"¡QUÉ BUENO! 🤩","iconurl":"","id":"61csd4e6-a687-8aa1-bfd3-698a2822c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"OK","iconurl":"","id":"61csd4e6-2287-8901-bfd3-698a2840c511","isDuplicate":false,"name":"user"}]}
+																labelc3_user8:¡QUÉ BUENO! 🤩 1
+																	labelc3_bot13:✅ Tú progreso se guardó con éxito, ahora puedes continuar al curso *"4️⃣ Hemoglobina y el transporte del oxígeno a los tejidos"* de la ruta 1.:goto labelc3_bot14
+																labelc3_user9:OK 2
+																	labelc3_bot14:✅ Tú progreso se guardó con éxito, ahora puedes continuar al curso *"4️⃣ Hemoglobina y el transporte del oxígeno a los tejidos"* de la ruta 1.:continue
+																		labelc3_bot15:🤖💬 estimado/a participante, ¿a dónde quieres ir?[[MENÚ PRINCIPAL, SIGUIENTE TEMA]]
+																			labelc3_user10:MENÚ PRINCIPAL 1
+																				labelc3_bot16:¡Vamos!:call default.ListaRutas
+																			labelc2_user24:SIGUIENTE TEMA 2
+																				labelc2_bot34:¡Vamos!:call default.R1Curso4
+															
+[R1Curso4]
+   labelc4_bot1:Bienvenido al curso 4️⃣ *HEMOGLOBINA Y EL TRANSPORTE DEL OXÍGENO A LOS TEJIDOS*:continue
+		labelc4_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 4","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc4_user1:Empezar Tema 4 1
+				labelc4_bot3:¡Genial! Empecemos ahora mismo 😎:continue
+					labelc4_bot4:{"name":"quickreply","type":"quick_reply","alias":"Hemoglobina","msgid":"e15bb3db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"*Hemoglobina y oxígeno diluido (PaO2)*\n\n🤖💬 estimado/a participante, ¿sabías qué...?\n\nLa mayor parte del *transporte del oxígeno* que se entrega a los tejidos sucede a través de la *hemoglobina* _(>98% del oxígeno que se transporta)._ A presiones normales el oxígeno diluido _(PaO2)_ tiene un *rol* muy *marginal* en la *oxigenación de tejidos.*\n\n▪️Contenido de O2 en la hemoglobina = *1.34 x Hb x Saturación.* \n\n▪️Contenido de O2 diluido= 0.0031 ml/mmHg/100 ml de sangre."},"options":[{"type":"text","title":"ENTIENDO 🤓","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a5540c52d","isDuplicate":false,"name":"user"}]}
+						labelc4_user2:ENTIENDO 🤓 1
+							labelc4_bot5:{"name":"quickreply","type":"quick_reply","alias":"Hemoglobina","msgid":"e15bb3db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤓💬 estimado/a participante, en condiciones ideales:\n\n▪️1.34 x 15 x 0.97 =\n*19.5 ml O2/100 ml de sangre _van con la hemoglobina._*\n\n▪️0.0031 ml x 95 mmHg =\n*0.3 ml O2/100 ml de sangre _van diluidos_*"},"options":[{"type":"text","title":"OK","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a55mmc52d","isDuplicate":false,"name":"user"}]}
+								labelc4_user3:OK 1
+									labelc4_bot6:🩸 La saturación de la hemoglobina es el mejor parámetro para evaluar la oxigenación de los tejidos que la medición de oxígeno libre en sangre (PaO2).[[CONTINUAR]]
+										labelc4_user4:CONTINUAR 1
+											labelc4_bot7:estimado/a participante, si bien existre una correlación entre la cantidad de oxígeno diluido en sangre _(PaO2)_ y el nivel de saturación de la hemoglobina, esto *puede variar de acuerdo a múltiples factores*.[[ENTIENDO 🤔]]
+												labelc4_user5:ENTIENDO 🤔 1
+													labelc4_bot8:🤖💬 Antes de finalizar, recordemos 4 aspectos importantes tratados en esta ruta de aprendizaje.:continue
+														labelc4_bot9:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"e15a73db-b86d-e4a1-da47-2jj7ce610b92","content":{"type":"text","text":"*INTERCAMBIO DE GASES*\n\n1️⃣ El intercambio en los pulmones se produce a nivel *alveolar*, pero está gobernado por *leyes físicas y proceso fisiológicos bien determinados*. 💨➡️🫁🔎🔅\n\n2️⃣ Es posible estimar el *impacto* de la *concentración de oxígeno inspirado* y *factores ambientales* sobre el proceso de intercambio de gases."},"options":[{"type":"text","title":"CONTINUAR","iconurl":"","id":"61csd4e6-a687-8901-bfd3-aa8a2840c52d","isDuplicate":false,"name":"user"}]}
+															labelc4_user6:CONTINUAR 1
+																labelc4_bot10:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"e15a73db-b86d-e4a1-da47-2jj7ce610b92","content":{"type":"text","text":"3️⃣ estimado/a participante, los pulmones son unidades complejas y dinámicas. Un intercambio de gases apropiado requiere de un balance entre la ✌️ *Ventilación (V)* y la 🩸 *Perfusión (Q)*.\n\n4️⃣ Por último, recuerda que la oxigenación de los tejidos se produce fundamentalmente a través de la hemoglobina 🩸."},"options":[{"type":"text","title":"ENTIENDO 🤓","iconurl":"","id":"61csd4e6-a687-8901-bfcc-aa8a2840c52d","isDuplicate":false,"name":"user"}]}
+																	labelc4_user7:ENTIENDO 🤓 1
+																		labelc4_bot11:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"e15994db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🥳 estimado/a participante, ¡ya culminaste la lección de aprendizaje 1 *Fisiología respiratoria básica - Intercambio de gases*!\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"PERFECTO 😎","iconurl":"","id":"61cnn4e6-a687-8aa1-bfd3-698a2822c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"OK","iconurl":"","id":"61jjj4e6-2287-8901-bfd3-698a2840c511","isDuplicate":false,"name":"user"}]}
+																			labelc4_user8:PERFECTO 😎 1
+																				labelc4_bot12:✅ Tú progreso se guardó con éxito.:goto labelc3_bot13
+																			labelc4_user9:OK 2
+																				labelc3_bot13:✅ Tú progreso se guardó con éxito.:continue
+																					labelc4_bot14:🤖💬 estimado/a participante, ¿a dónde quieres ir?[[MENÚ PRINCIPAL, SIGUIENTE TEMA]]
+																						labelc4_user10:MENÚ PRINCIPAL 1
+																							labelc3_bot15:¡Vamos!:call default.ListaRutas
+																						labelc4_user11:SIGUIENTE TEMA 2
+																							labelc2_bot16:¡Vamos!:call default.R1Evaluacion														
+							
+[R1Evaluacion]
+   labeleva_bot1:Bienvenido a la *EVALUACIÓN* de la Ruta 1 :continue
+		labeleva_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Evaluación","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labeleva_user1:Empezar Evaluación 1
+				labeleva_bot3:¡Tú puedes, estimado/a participante! 😎:continue
+					labeleva_bot4:*Pregunta* 1️⃣ Sobre la importancia de los pulmones, ¿Cuál de los siguientes enunciados es falso?\n\n✍️ *Escribe la opción de tu respuesta: A, B, C o D.*\n\n*A.* La función más importante de los pulmones consiste en el intercambio de gases.\n\n*B.* El intercambio de gases consiste en la absorción de oxígeno y eliminador de carbono.\n\n*C.* El intercambio de gases se produce a nivel de los bronquios.\n\n*D.* Los alvéolos son un espacio microscópico donde ocurre el intercambio de gases
+						labeleva_user2:C|c
+							labeleva_bot5:✅ 🥳 ¡Correcto, estimado/a participante!:goto labeleva_bot6
+						labeleva_user3:A|B|D|a|b|d
+							labeleva_bot6:😳 ¡Ups!, estimado/a participante, la respuesta correcta es *C.*:continue
+								labeleva_bot7:*Pregunta* 2️⃣ Para que el oxígeno pase desde el espacio alveolar a los capilares se requiere de una diferencia de presiones entre estos dos espacios. ¿Cuál de los siguientes no es un factor que influye en generar la presión de oxígeno a nivel de alveolar?\n\n✍️ *Escribe la opción de tu respuesta: A, B, C o D.*\n\n*A.* Temperatura del aire que respiramos.\n\n*B.* Fracción inspirada de oxígeno.\n\n*C.* Presión de vapor de agua a la temperatura corporal.\n\n*D.* Presión barométrica.
+									labeleva_user4:A|a
+										labeleva_bot8:✅ 🥳 ¡Correcto, estimado/a participante!:goto labeleva_bot9
+									labeleva_user5:B|C|D|b|c|d
+										labeleva_bot9:😳 ¡Ups!, estimado/a participante, la respuesta correcta es *A.*:continue
+											labeleva_bot10:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"zz5a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤖💬 ¡Felicitaciones, estimado/a participante!\nYa terminaste de dar la evaluación del la *“RUTA 1 - Fisiología respiratoria básica - Intercambio de gases”*.\n\nAhora regresaremos al menú principal, donde podrás continuar con la ruta 2, o volver a llevar cualquier otra ruta. "},"options":[{"type":"text","title":"Chau👋","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+												labeleva_user6:Chau👋 1
+													labeleva_bot11:🤖💬¡Hasta luego!:call default.ListaRutas
+											
+[Ruta2]
+	labelr2_bot1: Estos son los cursos que componen la Ruta 2:\n\n1️⃣ *CASUSAS DE HIPOXEMIA*\n2️⃣ *EVALUACIÓN*\n\nEscribe el número de la ruta que te gustaría llevar ✏
+		labelr2_user1:1
+			labellr_bot1:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R2Curso1
+		labelr2_user2:2
+			labellr_bot2:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R2Evaluacion
+
+[R2Curso1]
+   labelc1_bot1:Bienvenido al curso 1️⃣ *CAUSAS DE HIPOXEMIA*:continue
+		labelc1_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"Ver Temario","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc1_user1:Empezar Tema 1
+				labelc1_bot3:¡Empecemos!🙌:goto labelc1_user3
+			labelc1_user2:Ver Temario 2
+				labelc1_bot4:*Hoy veremos las siguientes causas de hipoxemia:*\n\n1️⃣ Altura\n2️⃣ Hipoventilación\n3️⃣ Shunt\n4️⃣ Trastorno de Ventilación/Perfusión\n5️⃣ Trastorno de Difusión\n\n✍️ Escribe *OK* para continuar.
+					labelc1_user3:Ok|OK|ok
+						labelc1_bot5:{"name":"quickreply","type":"quick_reply","alias":"Fisiología","msgid":"e15a73db-116d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"Entendiendo la fisiología del intercambio de gases se pueden establecer *mecanismos* que producen una disminución de PaO2 y la saturación de hemoglobina.\n\n🤖💬 estimado/a participante, la separación de los diversos mecanismos es por fines didácticos. *En un paciente es común que coexista más de un fenómeno.*"},"options":[{"type":"text","title":"ENTIENDO 🤓","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c44d","isDuplicate":false,"name":"user"},{"type":"text","title":"ME QUEDA CLARO 👍","iconurl":"","id":"00csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+							labelc1_user4:ENTIENDO 🤓 1|ME QUEDA CLARO 👍 2
+								labelc1_bot6:Hay cinco causas de hipoxemia _(bajo nivel de óxigeno en la sangre)_, estas pueden suceder *combinadas* y no responden igual a uso de oxígeno medicinal suplementario.[[VER CAUSAS 🔎]]
+									labelc1_user5:VER CAUSAS 🔎 1
+										labelc1_bot7:{"name":"quickreply","type":"quick_reply","alias":"Altura","msgid":"e15a73db-11vv-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"1️⃣ ⛰️ *Altura _(cambios en la presión barométrica)_:*\n\nUna disminución de la presión barométrica producirá una *disminución* de la presión de *O2* a nivel alveolar:\n_(PAO2 =FiO2(760-PH20)-PaCO2/RER)_\n\nEn condiciones normales los valores de saturación en altura son distintos que a nivel del mar."},"options":[{"type":"text","title":"NO ENTIENDO","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698ass40c44d","isDuplicate":false,"name":"user"},{"type":"text","title":"LO COMPRENDO","iconurl":"","id":"0ttsd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+											labelc1_user6:NO ENTIENDO 1
+												labelc1_bot8:estimado/a participante, para entenderlo mejor mira este video. Cuando termines de visualizar, ✍️ escribe *OK* para continuar.:continue 
+													labelc1_bot9:https://youtu.be/9S4tjRZZk9M
+														labelc1_user7:OK|OK|ok
+															labelc1_bot10:!Sigamos!:goto labelc1_bot11
+											labelc1_user7:LO COMPRENDO 2
+												labelc1_bot11:¡Genial, estimado/a participante! 🤩 Entonces veamos la segunda causa de hipoxemia::continue	
+													labelc1_bot12:2️⃣ 🥱 *Hipoventilación,* es una respiración demasiado lenta o superficial que hace que la cantidad de aire que llega a los alveolos no sea suficiente[[YA VEO😲]]
+														labelc1_user8:YA VEO😲 1
+															labelc1_bot13:😨💬 estimado/a participante, en palabras más técnicas, la hipoventilación genera una *disminución de la presión alveolar* de oxígeno debido a que al disminuir la cantidad de gases que entran y salen de los pulmones disminuye el volumen de oxígeno que entra al alveolo. Si por otro lado, sigue saliendo oxígeno hacia los capilares la diferencia entre el aire que entra y que sale del alveolo será menor.[[CONTINUAR]]
+																labelc1_user9:CONTINUAR 1
+																	labelc1_bot14:🤓💬 estimado/a participante, la magnitud de la hipoventilación para causar hipoxemia se puede deducir fácilmente en la ecuación de gases alveolares: *PAO2 =FiO2(760-PH20)-PaCO2/RER*[[OK]]
+																		labelc1_user10:OK 1
+																			labelc1_bot15:🤖💬 Ahora veamos cuál es la tercera causa de la hipoxemia::continue
+																				labelc1_bot16:🩸 🩻 *Shunt*, consiste en el pasaje de sangre no oxigenada desde la circulación venosa a la arterial sin participar en el intercambio de gases.[[VER EJEMPLOS]]
+																					labelc1_user11:VER EJEMPLOS 1
+																						labelc1_bot17:☝️ estimado/a participante, algunos ejemplos son: cardiopatías congénitas cianóticas o mas comúnmente en atelectasias y derrames pleurales.[[YA VEO😲]]
+																							labelc1_user12:YA VEO😲 1
+																								labelc1_bot18:😌 *Normalmente* existe un shunt fisiológico del 2-5% de la sangre que *no pasa por los pulmones y drena directamente a la circulación del ventrículo izquierdo* _(senos coronarios, vasos de la circulación bronquial)_.[[CONTINUAR]]
+																									labelc1_user13:CONTINUAR 1
+																										labelc1_bot19:🤖💬 estimado/a participante, en la anterior ruta de aprendizaje hablamos sobre el concepto de *Ventilación/Perfusión*, justamente la cuarta causa tiene que ver con este tema ⬇️.:continue
+																											labelc1_bot20:{"name":"quickreply","type":"quick_reply","alias":"Transtorno","msgid":"e15a73db-226d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🔃 *Trastorno V/Q*\n\n🤓💭 Entedemos que el pulmón debe ser considerado como la sumatoria de una serie de unidades con diferentes relaciones V/Q. El *equilibrio* entre estas unidades es lo que produce una oxigenación adecuada 👍."},"options":[{"type":"text","title":"CONTINUAR","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+																												labelc1_user14:CONTINUAR 1
+																													labelc1_bot21:🤔🫁 Sin embargo, se producirá hipoxemia si este balance entre unidades con relaciones V/Q diferentes se rompe súbitamente.[[YA VEO🤓]]
+																														labelc1_user15:YA VEO🤓 1
+																															labelc1_bot22:{"name":"quickreply","type":"quick_reply","alias":"Ejemplo","msgid":"e1uu73db-226d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"estimado/a participante, veamos algunos *ejemplos de alteraciones súbitas que producen un desbalance V/Q e hipoxemia:*\n\n▪️ Cuando mas sangre *no oxigenada pasa directamente* a la circulación izquierda debido a disminuciones focales de la ventilación, por ejemplo: 😮‍💨 el asma.\n\n▪️ Cuando la sangre *no circula* por un número de alvéolos aumentando el espacio muerto, por ejemplo: 🫁⚠️ embolia pulmonar."},"options":[{"type":"text","title":"OK","iconurl":"","id":"61csd4e6-a687-8911-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+																																labelc1_user16:OK 1
+																																	labelc1_bot23:{"name":"quickreply","type":"quick_reply","alias":"Difusion","msgid":"e15a73cc-226d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"5️⃣ *Trastorno de difusión*\n\nestimado/a participante entendámoslo de esta forma: *la difusión del oxígeno* a través de la membrana alveolo capilar 🫁🔎🔅 *depende de la gradiente* _(diferencia de presiones)_ entre el alveolo y los capilares, el grosor de la membrana y su superficie total _(Ley de Fick)_."},"options":[{"type":"text","title":"¿ENTONCES?","iconurl":"","id":"61csd006-a687-8901-bfd3-6cca2840c52d","isDuplicate":false,"name":"user"}]}
+																																		labelc1_user17:¿ENTONCES? 1
+																																			labelc1_bot24:🤖💬 Cuando un paciencte presenta injuria pulmonar, la superficie total se altera temporalmente. Si este paciente tiene enfermedades como neumonias intersticiales o enfisema, la superficie total se altera permanentemente.[[YA VEO😲]]
+																																				labelc1_user18:YA VEO😲 1
+																																					labelc1_bot25:🤓💬 Además trastornos que alteren el grosor de la membrana, la velocidad del tránsito sanguíneo o la “distancia” que debe recorrer el oxígeno para llegar a los glóbulos rojos pueden ser *causas adicionales de hipoxemia.*[[COMPRENDO]]
+																																						labelc1_user19:COMPRENDO 1
+																																							labelc1_bot26:{"name":"quickreply","type":"quick_reply","alias":"Terminar","msgid":"e15axxcc-226d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"estimado/a participante, antes de terminar veamos cómo responden al oxígeno medicinal las diversas causas de hipoxemia:\n\n▪️👎 El shunt va a responder *pobremente* a la administración de oxígeno.\n\n▪️👍 *Las demás* causas de hipoxemia *mejoran con* el aumento de la presión parcial de *oxígeno* inspirado _(FiO2)_."},"options":[{"type":"text","title":"ENTIENDO","iconurl":"","id":"61csd006-a687-8901-bfd3-44ca2840c52d","isDuplicate":false,"name":"user"}]}
+																																								labelc1_user20:ENTIENDO 1
+																																									labelc1_bot27:{"name":"quickreply","type":"quick_reply","alias":"Altura","msgid":"e15a73db-11vv-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"👏🏼 estimado/a participante, ¡ya culminaste la lección 2 *Fisiopatología respiratoria básica - Hipoxemia*!\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"PERFECTO😎","iconurl":"","id":"6rrsd4e6-a687-cc01-bfd3-698ass40c44d","isDuplicate":false,"name":"user"},{"type":"text","title":"OK","iconurl":"","id":"0ttsd4e6-a687-8901-bfd3-698a2cc0c52d","isDuplicate":false,"name":"user"}]}
+																																										labelc1_user21:PERFECTO😎 1|OK 2
+																																											labelc1_bot28:✅ Tú progreso se guardó con éxito.:continue
+																																												labelc1_bot29:🤖💬 estimado/a participante, es momento de dar tu evaluación. ¡Tú puedes! 🤩🥳[[IR A EVALUACIÓN]]
+																																													labelc1_user22:IR A EVALUACIÓN 1
+																																														labelc1_bot30:!Vamos!⭐:call default.R2Evaluacion																																						
+
+[R2Evaluacion]
+   labeleva_bot1:Bienvenido a la *EVALUACIÓN* de la Ruta 2:continue
+   		labeleva_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Evaluación","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labeleva_user1:Empezar Evaluación 1
+				labeleva_bot3:¡Tú puedes, estimado/a participante! 😎:continue
+					labeleva_bot4:1️⃣ ¿Cuál de las siguientes alternativas no es una causa de hipoxemia?\n✍️ *Escribe la opción de tu respuesta: A, B, C o D.*\n\n*A.* Hiperventilación\n\n*B.* Trastorno de ventilación / perfusión.\n\n*C.* Hipoventilación.\n\n*D.* Disminución de la presión barométrica.
+						labeleva_user2:a|A
+							labeleva_bot5:✅ 🥳 ¡Correcto, estimado/a participante!:goto labeleva_bot6
+						labeleva_user3:b|B|c|C|d|d
+							labeleva_bot6:😳 ¡Ups!, estimado/a participante, la respuesta correcta es *A.*:continue
+								labeleva_bot7:2️⃣ Los problemas de difusión son una de las causas de hipoxemia. Al respecto, señale lo correcto:\n✍️ *Escribe la opción de tu respuesta: A, B, C o D.*\n\n*A.* Trastornos que alteren el grosor de la membrana, la velocidad del tránsito sanguíneo o la "distancia" que debe recorrer el oxígeno para llegar a los glóbulos rojos pueden ser causas adicionales de hipoxemia.\n\n*B.* Para que exista un trastorno de difusión necesariamente la membrana alveolo capilar debe estar engrosada.\n\n*C.* Para que exista un trastorno de difusión necesariamente debe haber anemia.\n\n*D.* Los problemas de difusión solo se dan en condiciones de altura.
+									labeleva_user4:a|A
+										labeleva_bot8:✅ 🤩 ¡Excelente, estimado/a participante!:goto labeleva_bot9
+									labeleva_user5:|B|c|C|d|d
+										labeleva_bot9:😳 ¡Ups!, estimado/a participante, la respuesta correcta es *A.*:continue
+											labeleva_bot10:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"e1cc73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤖💬 ¡Felicitaciones, estimado/a participante!\nYa terminaste de dar la evaluación del la *RUTA 2 -  Fisiopatología respiratoria básica - Hipoxemia*. \n\nAhora regresaremos al menú principal, donde podrás continuar con la ruta 3, o volver a llevar cualquier otra ruta."},"options":[{"type":"text","title":"CHAU 👋","iconurl":"","id":"61csd4e6-a687-8901-22d3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"OK","iconurl":"","id":"61csd4e6-a687-8901-22d3-698a28cc0c52d","isDuplicate":false,"name":"user"}]}
+												labeleva_user6:CHAU 👋 1|OK 2
+													laveleva_bot11:!Hasta luego!👋:call default.ListaRutas
+													
+[Ruta3]
+	labelr3_bot1: Estos son los cursos que componen la Ruta 3:\n\n1️⃣ *INSUFICIENCIA RESPIRATORIA*\n2️⃣ *INJURIA PULMONAR*\n3️⃣ *SÍNDROME DE DISTRÉS RESPIRATORIO AGUDO*\n4️⃣ *COVID 19*\n5️⃣ *EVALUACIÓN*\n\nEscribe el número de la ruta que te gustaría llevar ✏
+		labelr3user1:1
+			labellr_bot1:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R3Curso1
+		labelr3_user2:2
+			labellr_bot2:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R3Curso2
+		labelr3_user3:3
+			labellr_bot3:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R3Curso3
+		labelr3_user4:4
+			labellr_bot4:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R3Curso4
+		labelr3_user5:5
+			labellr_bot5:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R3Evaluacion
+
+[R3Curso1]
+   labelc1_bot1:Bienvenido al curso 1️⃣ *INSUFICIENCIA RESPIRATORIA*:continue
+		labelc1_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 1","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"Ver Temario","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc1_user1:Empezar Tema 1 1
+				labelc1_bot3:¡Genial! Empecemos ahora mismo 😎🙌:goto labelc1_user3
+			labelc1_user2:Ver Temario 2
+				labelc1_bot4:🤖💬 estimado/a participante, en el tema de hoy veremos lo siguiente:\n\n▪️Definición de insuficiencia respiratoria\n▪️Causas de insuficiencia respiratoria\n▪️Tipos de insuficiencia respiratoria\n▪️Importancia de procesos agudos infecciosos.\n\n✍️ Escribe *OK* para continuar.
+					labelc1_user3:Ok|OK|ok
+						labelc1_bot5:🤓💬 estimado/a participante, ¿sabes qué es una insuficiencia respiratoria?[[Sí😁,No🤔]]
+							labelc1_user4:Sí😁 1
+								labelc1_bot6:¡Muy bien, estimado/a participante! 🤩 Repasemos este concepto  ⬇️:goto labelc1_bot7
+							labelc1_user5:No🤔 2
+								labelc1_bot7:Te cuento...:continue
+									labelc1_bot8:☝️😄 Una insuficiencia respiratoria se define como la *incapacidad del sistema respiratorio* de realizar su función básica, el *intercambio de gases* 🔄.💨[[YA VEO🤔]]
+										labelc1_user6:Ya veo🤔 1
+											labelc1_bot9:{"name":"quickreply","type":"quick_reply","alias":"Insuficiencia","msgid":"e15a73db-b86d-e4a1-da47-2333ce610b92","content":{"type":"text","text":"🤓💬 estimado/a participante existen didácticamente dos tipos de insuficiencia respiratoria:\n\n◼️ *Hipoxemia:* se produce por altura, hipoventilación, shunt, trastorno V/Q y trastornos de difusión.\n\n◼️ *Hipercapnia:* disminución de la ventilación por minuto.\n\n💡 *RECUERDA:* en la práctica clínica estos eventos pueden darse de manera combinada."},"options":[{"type":"text","title":"ME QUEDA CLARO","iconurl":"","id":"633sd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"OK 👍","iconurl":"","id":"61csd4e6-a687-8901-bfd3-6dda2840c52d","isDuplicate":false,"name":"user"}]}
+												labelc1_user7:ME QUEDA CLARO 1|OK 👍 2
+													labelc1_bot10:estimado/a participante, ¿tienes alguna idea sobre a qué se deban estos eventos?[[SÍ 👍,NO ESTOY SEGUR@ 🧐]]
+														labelc1_user8:Sí 👍 1
+															labelc1_bot11:🤖💬 Veamos si acertaste ⬇️:goto labelc1_bot12
+														labelc1_user9:NO ESTOY SEGUR@ 🧐 2
+															labelc1_bot12:Tranquil@, estamos aquí para aprender 😊.\nVeamos cuáles son las causas:continue
+																labelc1_bot13:{"name":"quickreply","type":"quick_reply","alias":"Causas","msgid":"e15a73db-b86d-e4a1-daxx-2333ce610b92","content":{"type":"text","text":"😮‍💨 *CAUSAS*\n\nUna causa frecuente de insuficiencia respiratoria la constituyen los *procesos infecciosos agudos* que comprometen el aparato respiratorio."},"options":[{"type":"text","title":"¿POR QUÉ?","iconurl":"","id":"633sd4e6-a687-8901-bfd3-698a2848852d","isDuplicate":false,"name":"user"}]}
+																	labelc1_user10:¿POR QUÉ? 1
+																		labelc1_bot14:Porque estos *causan* una serie de *procesos fisiopatológicos* _(injuria pulmonar)_ que llevan a alteraciones en el intercambio de gases _(en especial hipoxemia)_.[[ENTIENDO 🤓]]
+																			labelc1_user11:ENTIENDO 🤓 1
+																				labelc1_bo15:🤖💬 estimado/a participante, *la severidad* de una injuria pulmonar *es importante* para determinar el nivel de atención que se necesita.[[OK😯]]
+																					labelc1_user12:OK😯 1
+																						labelc1_bot16:estimado/a participante, para establecer esto se requiere de un adecuado diagnóstico e idealmente algunos exámenes auxiliares. 📋[[ME QUEDA CLARO]]
+																							labelc1_user13:ME QUEDA CLARO 1
+																								labelc1_bot17:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"e15a73db-b86d-e4a1-daxx-2xx3ce610b92","content":{"type":"text","text":"estimado/a participante, has terminado con éxito el tema *1️⃣ Insuficiencia respiratoria* 🤩 ¡Muy bien!\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"OK","iconurl":"","id":"633sd4e6-a687-89mm1-bfd3-698a2848852d","isDuplicate":false,"name":"user"}]}
+																									labelc1_user14:OK 1
+																										labelc1_bot18:✅ Tú progreso se guardó con éxito, ahora puedes continuar al curso *"2️⃣ Injuria pulmonar"* de la ruta 3.:continue
+																											labelc1_bot19:🤖💬 estimado/a participante, ¿a dónde quieres ir?[[MENÚ PRINCIPAL,SIGUIENTE TEMA]]
+																												labelc1_user15:MENÚ PRINCIPAL 1
+																													labelc1_bot20:!Vamos!:call default.ListaRutas
+																												labelc1_user16:SIGUIENTE TEMA 2
+																													labelc1_bot21:!Vamos!:call default.R3Curso2																						
+																											
+[R3Curso2]
+   labelc2_bot1:Bienvenido al curso 2️⃣ *INJURIA PULMONAR*:continue
+		labelc2_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 2","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"Ver Temario","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc2_user1:Empezar tema 2 1
+				labelc2_bot3:¡Genial! Empecemos ahora mismo 😎🙌:goto labelc2_user3
+			labelc2_user2:Ver Temario 2
+				labelc2_bot4:🤖💬 estimado/a participante, en el tema de hoy veremos lo siguiente:\n\n▪️Definición de injuria pulmonar\n▪️Fisiopatología\n\n✍️ Escribe *OK* para continuar.
+					labelc2_user3:Ok|ok|OK
+						labelc2_bot5:🤓💬 estimado/a participante, ¿qué concepto se te viene a la mente cuando hablamos de injuria pulmonar?[[NO SÉ,DESEO ESPECIFICAR]]
+							labelc2_user4:NO SÉ 1
+								labelc2_bot6:🤖💬 Te cuento, estimado/a participante:goto labelc2_bot8
+							labelc2_user5:DESEO ESPECIFICAR 2
+								labelc2_bot7:🤖💬 estimado/a participante, responde en un solo mensaje.
+									labelc2_user6:
+										labelc2_bot8:😊 Gracias por participar, estimado/a participante. Veamos si tu respuesta es correcta.:continue
+											labelc2_bot9:La injuria pulmonar es una respuesta del pulmón a múltiples estímulos sistémicos o locales.[[CONTINUAR]]
+												labelc2_user7:CONTINUAR 1
+													labelc2_bot10: {"name":"quickreply","type":"quick_reply","alias":"Injuria","msgid":"e15a73db-oo6d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"La injuria pulmonar puede progresar a formas muy severas en las que grandes áreas de los pulmones se comprometen: síndrome de distrés respiratorio agudo (SDRA).\n\n🤖💬 Sin embargo, puede limitarse por:\n\n▪️🚫 La interrupción del mecanismo causante\n▪️🥼 El tratamiento médico\n▪️🔃 La evolución natural de la enfermedad"},"options":[{"type":"text","title":"ENTIENDO","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c5ww","isDuplicate":false,"name":"user"},{"type":"text","title":"QUIERO SABER MÁS","iconurl":"","id":"61csd4e6-a687-cc01-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+														labelc2_user8:ENTIENDO 1|QUIERO SABER MÁS 2
+															labelc2_bot11:¡Genial, estimado/a participante! 🤩 Te cuento:continue
+																labelc2_bot12:🤓💬 estimado/a participante, es importante que sepas que durante el tiempo que ocurre la injuria pulmonar se requiere de tratamiento de soporte, como la administración de oxígeno.[[CONTINUAR]]
+																	labelc2_user9:CONTINUAR 1
+																		labelc2_bot13:☝️ Algunos pacientes con injuria pulmonar pueden evolucionar rápidamente a *formas severas* y desarrollar síndrome de distrés respiratorio agudo (SDRA).[[¿SDRA?]]
+																			labelc2_user10:¿SDRA? 1
+																				labelc2_bot14:El SDRA es la forma más severa de injuria pulmonar, en el módulo "3️⃣ Síndrome de distrés respiratorio agudo", veremos este tema con más detenimiento.[[ENTIENDO🤓]]
+																					labelc2_user11:ENTIENDO🤓 1
+																						labelc2_bot15:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"e15a73db-b86d-e4a1-daxx-2xx3ce61rr92","content":{"type":"text","text":"estimado/a participante, has terminado con éxito el tema *2️⃣ Injuria pulmonar* 🤩 ¡Muy bien!\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"OK","iconurl":"","id":"633sd4e6-a687-89mm1-bfd3-698a2848852d","isDuplicate":false,"name":"user"}]}
+																							labelc2_user12:OK 1
+																								labelc2_bot16:✅ Tú progreso se guardó con éxito, ahora puedes continuar al curso *"3️⃣ Síndrome de distrés respiratorio agudo"* de la ruta 3.:continue
+																									labelc2_bot17:🤖💬 estimado/a participante, ¿a dónde quieres ir?[[MENÚ PRINCIPAL,SIGUIENTE TEMA]]
+																										labelc2_user15:MENÚ PRINCIPAL 1
+																											labelc2_bot18:!Vamos!:call default.ListaRutas
+																										labelc2_user16:SIGUIENTE TEMA 2
+																											labelc2_bot19:!Vamos!:call default.R3Curso3	
+													
+[R3Curso3]
+   labelc3_bot1:Bienvenido al curso 3️⃣ *SÍNDROME DE DISTRÉS RESPIRATORIO AGUDO*:continue
+		labelc3_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-2247-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 3","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"Ver Temario","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc3_user1:Empezar Tema 3 1
+				labelc3_bot3:¡Genial! Empecemos ahora mismo 😎🙌:goto labelc3_user3
+			labelc3_user2:Ver Temario 2
+				labelc3_bot4:🤖💬 estimado/a participante, en el tema de hoy veremos lo siguiente:\n\n▪️Definición de SDRA\n▪️Fisiopatología del SDRA\n▪️SDRA y su relación con la injuria pulmonar\n\n✍️ Escribe *OK* para continuar.
+					labelc3_user3:Ok|ok|OK
+						labelc3_bot5:☝️ estimado/a participante, el Síndrome de Distrés Respiratorio Agudo _(SDRA)_ es una *forma severa de injuria pulmonar*, con alta mortalidad y que requiere un manejo especializado.[[CONTINUAR]]
+							labelc3_user4:CONTINUAR 1
+								labelc3_bot6:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-2247-20c7ce610b92","content":{"type":"text","text":"Es más, en muchas ocasiones requiere apoyo con ventilación invasiva\n\n🤖💬 En las formas severas tiene una alta mortalidad *_(>30-40%)_*."},"options":[{"type":"text","title":"YA VEO🤔","iconurl":"","id":"61csd4e6-a687-89xx-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+									labelc3_user5:YA VEO🤔 1
+										labelc3_bot7:🤓💬 Un paciente con un cuadro respiratorio agudo puede quejarse de síntomas muy comunes como dolor de garganta 🫢, fiebre 🤒 y *sin evidencia mayor de alteraciones en su intercambio de gases* 🔃.[[¡OH VAYA! 😯]]
+											labelc3_user6:¡OH VAYA! 😯 1
+												labelc3_bot8:🤖💬 estimado/a participante, además::continue
+													labelc3_bot9: luego de pocos días puede *evolucionar a formas muy severas* donde grandes áreas del pulmón se comprometen 🫁⚠️ y se ve la necesidad de utilizar *tratamientos invasivos*. Esto constituye lo que se llama el Síndrome de Distrés Respiratorio Agudo _(SDRA)_.[[CONTINUAR]]
+														labelc3_user7:CONTINUAR 1
+															labelc3_bot10:estimado/a participante, a continuación te enviaré la imagen de un pulmón afectado por SDRA.\n\n✍️ Cuando termines de visualizar, escribe *OK* para continuar.:continue
+																labelc3_bot11:https://drive.google.com/file/d/1bXWG2Oz_8ptue-gtpxxslJB27K9Fxusc/view
+																	labelc3_user8:OK|ok|Ok
+																		labelc3_bot12:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"e15a73db-b86d-e4a1-daxx-2xx3ce61rr92","content":{"type":"text","text":"estimado/a participante, has terminado con éxito el tema *3️⃣ Síndrome de distrés respiratorio agudo* 🤩 ¡Muy bien!\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"OK","iconurl":"","id":"633sd4e6-a687-89mm1-bfd3-698axx48852d","isDuplicate":false,"name":"user"}]}
+																			labelc3_user9:OK 1
+																				labelc3_bot13:✅ Tú progreso se guardó con éxito, ahora puedes continuar al curso *"4️⃣ Covid 19"* de la ruta 3.:continue
+																					labelc3_bot14:🤖💬 estimado/a participante, ¿a dónde quieres ir?[[MENÚ PRINCIPAL,SIGUIENTE TEMA]]
+																						labelc3_user10:MENÚ PRINCIPAL 1
+																							labelc3_bot15:!Vamos!:call default.ListaRutas
+																						labelc3_user11:SIGUIENTE TEMA 2
+																							labelc3_bot16:!Vamos!:call default.R3Curso4	
+
+[R3Curso4]
+   labelc4_bot1:Bienvenido al curso 4️⃣ *COVID 19*:continue
+		labelc4_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-2247-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 4","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"Ver Temario","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc4_user1:Empezar Tema 4 1
+				labelc4_bot3:¡Genial! Empecemos ahora mismo 😎🙌:goto labelc4_user3
+			labelc4_user2:Ver Temario 2
+				labelc4_bot4:🤖💬 estimado/a participante, en el tema de hoy veremos lo siguiente:\n\n▪️Definición de COVID 19\n▪️Repaso de síntomas más frecuentes\n▪️Tratamientos\n\n✍️ Escribe *OK* para continuar.
+					labelc4_user3:Ok|OK|ok
+						labelc4_bot5:{"name":"quickreply","type":"quick_reply","alias":"Covid","msgid":"e15a73db-b86d-e4a1-CC47-20c7ce610b92","content":{"type":"text","text":"🤖💬 estimado/a participante, el covid 19 es la Infección viral producida por el virus RNA SARS Cov 2.\n\nSi bien tiene algunas características clínicas propias, *causa* una *injuria pulmonar* similar a otros agentes infecciosos."},"options":[{"type":"text","title":"YA VEO🤔","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a28ooc52d","isDuplicate":false,"name":"user"}]}
+							labelc4_user4:YA VEO🤔 1
+								labelc4_bot6:https://drive.google.com/file/d/1Ir1K2IJdxu0jwUjjUQpB-lHYIamQWBNH/view:continue
+									labelc4_bot7:En la actualidad, la vacunación y la constante mutación del virus ha alterado grandemente las formas de presentación de la infección por SARS COv 2. De hecho las formas más leves son más comunes en la población vacunada. Sin embargo, en no vacunados y en aquellos que se siguen afectando por formas severas los síntomas más importantes son los que te enviaré en la siguiente imagen.\n\n✍️ Cuando termines de visualizar, escribe *OK* para continuar.
+										labelc4_user5:Ok|OK|ok
+											labelc4_bot8:🤓💬 estimado/a participante, ¿sabes cuáles son los tratamientos para el covid 19?[[NO SÉ, DESEO ESPECIFICAR]]
+												labelc4_user6:NO SÉ 1
+													labelc4_bot9:🤖💬 Te cuento estimado/a participante:goto labelc4_bot11
+												labelc4_user7:DESEO ESPECIFICAR 2
+													labelc4_bot10:🤖💬 estimado/a participante, responde en un solo mensaje.
+														labelc4_user8:
+															labelc4_bot11:😊 Gracias por participar, estimado/a participante. Veamos si tu respuesta es correcta.:continue
+																labelc4_bot12:{"name":"quickreply","type":"quick_reply","alias":"Tratamientos","msgid":"ll5a73db-b86d-e4a1-CC47-20c7ce610b92","content":{"type":"text","text":"🤓💬 Los casos leves solo requieren de soporte y aislamiento.\n\nPor otro lado, el *oxígeno suplementario* es vital en los pacientes que desarrollan hipoxemia, también el uso de corticoides ha mostrado disminuir la mortalidad."},"options":[{"type":"text","title":"CONTINUAR","iconurl":"","id":"6eesd4e6-a687-8901-bfd3-698a28ooc52d","isDuplicate":false,"name":"user"}]}
+																	labelc4_user9:CONTINUAR 1
+																		labelc4_bot13:{"name":"quickreply","type":"quick_reply","alias":"Vacunacion","msgid":"ll5a73db-b86d-e4a1-CC47-20c7ce6ppb92","content":{"type":"text","text":"☝️ La vacunación es sin duda la estrategia más eficiente para evitar las formas severas de COVID 19. Existe adicionalmente en la actualidad medicación que se puede dar en etapas tempranas para evitar la progresión.\n\n🤖💬 Esta incluye anticuerpos monoclinales contra partes del virus y antivirales. Una vez instalada la inflamación pulmonar el uso de corticoides, y medicamentos para interferir la cascada inflamatoria (Anti IL 6) han mostrado resultados favorables en pacientes con hipoxemia."},"options":[{"type":"text","title":"ENTIENDO","iconurl":"","id":"6eesd99e6-a687-8901-bfd3-698a28ooc52d","isDuplicate":false,"name":"user"}]}
+																			labelc4_user10:ENTIENDO 1
+																				labelc4_bot14:{"name":"quickreply","type":"quick_reply","alias":"Recuerda","msgid":"ll5a73db-b86d-e4a1-CC47-11c7ce6ppb92","content":{"type":"text","text":"🤓💬 Recuerda, estimado/a participante\n\n◼️La mayoría de pacientes con Covid 19 desarrollarán formas leves y autolimitadas.\n\n◼️Es importante tener protocolos para poder reconocer pacientes en riesgo de desarrollar formas severas.\n\n◼️La saturación de oxígeno es un parámetro muy importante en el seguimiento de pacientes en riesgo.\n\n◼️El inicio de terapia con oxígeno medicinal es fundamental  en pacientes que desarrollan hipoxemia."},"options":[{"type":"text","title":"OK 😁","iconurl":"","id":"6eesd99e6-a687-8901-bfd3-698a2qqoc52d","isDuplicate":false,"name":"user"}]}
+																					labelc4_user11:OK 😁 1
+																						labelc4_bot15:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"lqqa73db-b86d-e4a1-CC47-11c7ce6ppb92","content":{"type":"text","text":"👏🏼 estimado/a participante, ¡ya culminaste la lección 3 *Insuficiencia respiratoria, injuria pulmonar, SDRA y Covid 19*!\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"OK","iconurl":"","id":"6eesd99e6-a687-8901-bfd3-698bbqqoc52d","isDuplicate":false,"name":"user"}]}
+																							labelc4_user12:OK 1
+																								labelc4_bot16:✅ Tú progreso se guardó con éxito.:continue
+																									labelc4_bot17:🤖💬 estimado/a participante, es momento de dar tu evaluación. ¡Mucha suerte! 😊[[IR A EVALUACIÓN]]
+																										labelc4_user13:IR A EVALUACIÓN 1
+																											labelc4_bot18:!Vamos!:call default.R3Evaluacion
+																						
+[R3Evaluacion]
+   labeleva_bot1:Bienvenido a la *EVALUACIÓN* de la Ruta 3:continue
+   		labeleva_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Evaluación","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labeleva_user1:Empezar Evaluación 1
+				labeleva_bot3:¡Tú puedes, estimado/a participante! 😎:continue
+					labeleva_bot4:1️⃣ La Covid 19 puede complicarse con problemas pulmonares que requieren el uso de oxígeno. Si una persona luego de una semana con Covid 19 nota que su saturación baja a 91%, ¿Qué debería hacer?\n✍️ *Escribe la opción de tu respuesta: A, B, C o D.*\n\n*A.* Buscar atención médica para evaluación.\n\n*B.* Estar en reposo y vigilar la saturación.\n\n*C.* De seguir descendiendo debe acudir a buscar atención.\n\n*D.* Estar en reposo y vigilar la saturación. Adicionalmente debe comenzar a tomar dexametasona 6 mg al día.
+						labeleva_user2:A|a
+							labeleva_bot5:✅ 🥳 ¡Correcto, estimado/a participante!:goto labeleva_bot6
+						labeleva_user3:B|b|C|c|D|d
+							labeleva_bot6:😳 ¡Ups!, estimado/a participante, la respuesta correcta es *A.*:continue
+								labeleva_bot7:2️⃣ El síndrome de distrés respiratorio agudo (SDRA) es el extremo más severo de las injurias pulmonares. Al respecto señale lo correcto:\n✍️ *Escribe la opción de tu respuesta: A, B, C o D.*\n\n*A.* Tiene una alta mortalidad entre 30-40%\n\n*B.* En unidades de cuidados intensivos tiene buen pronóstico.\n\n*C.* No se sabe bien que lo produce, es una condición nueva.\n\n*D.* La injuria pulmonar causada por Covid 19 nunca termina en SDRA.
+									labeleva_user4:A|a
+										labeleva_bot8:✅ 🤩 ¡Excelente, estimado/a participante!:goto labeleva_bot9
+									labeleva_user5:B|b|C|c|D|d
+										labeleva_bot9:😳 ¡Ups!, estimado/a participante, la respuesta correcta es *A.*:continue
+											labeleva_bot10:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"e1cc73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤖💬 ¡Felicitaciones, estimado/a participante!\nYa terminaste de dar la evaluación del la *RUTA 3 - Insuficiencia respiratoria, injuria pulmonar, SDRA y Covid 19*. \n\nAhora regresaremos al menú principal, donde podrás continuar con la ruta 3, o volver a llevar cualquier otra ruta."},"options":[{"type":"text","title":"CHAU 👋","iconurl":"","id":"61csd4e6-a687-8901-22d3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"OK","iconurl":"","id":"61csd4e6-a687-8901-22d3-698a28cc0c52d","isDuplicate":false,"name":"user"}]}
+												labeleva_user6:CHAU 👋 1|OK 2
+													laveleva_bot11:!Hasta luego!👋:call default.ListaRutas
+
+[Ruta4]
+	labelr4_bot1: Estos son los cursos que componen la Ruta 4:\n\n1️⃣ *IMPORTANCIA DE SISTEMAS DE EVALUACIÓN DE ACUERDO A GRAVEDAD Y RIESGOS*\n2️⃣ *USO DE OXÍGENO EN INJURIA PULMONAR Y SDRA POR SARS COV 2*\n3️⃣ *IMPORTANCIA DE LA POSICIÓN PRONA*\n4️⃣ *EVALUACIÓN*\n\nEscribe el número de la ruta que te gustaría llevar ✏
+		labelr4_user1:1
+			labellr_bot1:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R4Curso1
+		labelr4_user2:2
+			labellr_bot2:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R4Curso2
+		labelr4_user3:3
+			labellr_bot3:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R4Curso3
+		labelr4_user4:4
+			labellr_bot4:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R4Evaluacion
+
+[R4Curso1]
+   labelc1_bot1:Bienvenido al curso 1️⃣ *IMPORTANCIA DE SISTEMAS DE EVALUACIÓN DE ACUERDO A GRAVEDAD Y RIESGOS*:continue
+		labelc1_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 1","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc1_user1:Empezar Tema 1 1
+				labelc1_bot3:¡Genial! Empecemos ahora mismo 😎🙌:continue
+					labelc1_bot4:{"name":"quickreply","type":"quick_reply","alias":"Riesgos","msgid":"e1ee73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"estimado/a participante, los *sectores de riesgo* que debes considerar en un paciente son:\n\n▪️👴🏻 Edad >60\n▪️🫀⚠️ Enf cardiovascular\n▪️🫀😖 Hipertensión\n▪️🩸🍬 Diabetes\n▪️🫁 ⚠️ Enf pulmonar crónica\n▪️👨🏻‍🦲cáncer\n▪️💊 Medicación inmunosupresora\n▪️🩸VIH con carga viral detect o CD4 <200\n\n🤖💬 estimado/a participante, también son sectores de riesgo todos los pacientes con VIH, TB (activa o con historia de daño pulmonar secuelar), malnutrición (IMC <18 adultos, niños < 5 con MUAC en amarillo)"},"options":[{"type":"text","title":"ENTIENDO 😯","iconurl":"","id":"61csd4e6-a6cc7-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+						labelc1_user2:ENTIENDO 😯 1
+							labelc1_bot5:A continuación te enseñaré a realizar una evaluación inicial a pacientes confirmados con covid 19[[¡GENIAL! 🥳,OK]]
+								labelc1_user3:¡GENIAL! 🥳 1|OK 2
+									labelc1_bot6:{"name":"quickreply","type":"quick_reply","alias":"Signos","msgid":"e1ee73db-b86d-e4a1-da47-20c7ce610ww2","content":{"type":"text","text":"🤓💬 Al paciente con un test positivo se le debe realizar un examen físico que incluya signos vitales.\n\n👆 Aquí podemos tener dos resultados: "},"options":[{"type":"text","title":"VER RESULTADOS","iconurl":"","id":"61cs55e6-a6cc7-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+										labelc1_user4:VER RESULTADOS 1
+											labelc1_bot7:{"name":"quickreply","type":"quick_reply","alias":"Resultado1","msgid":"e1ee73db-b822-e4a1-da47-20c7ce610ww2","content":{"type":"text","text":"1️⃣ *RESULTADO 1*\n\n▪️SatO2 ≥ 94%\n▪️FR < 22\n▪️PA > 90/60\n\n▪️👍 Ausencia de daño a órgano blando (por ejemplo: estado mental ok, buena diuresis)\n▪️👩🏻‍🦱 Edad < 60\n▪️🚫⚠️ Sin factores de riesgo\n▪️🏚️ Posibilidad acceptable de aislamiento en casa.\n\n🤖💬 estimado/a participante, en este caso se debe realizar un monitoreo y soporte a domicilio."},"options":[{"type":"text","title":"VER RESULTADOS 2","iconurl":"","id":"61cs55e6-a6cc7-8901-bfd3-69ee2840c52d","isDuplicate":false,"name":"user"}]}
+												labelc1_user5:VER RESULTADOS 2 1
+													labelc1_bot8:{"name":"quickreply","type":"quick_reply","alias":"Resultado2","msgid":"e1qq73db-b822-e4a1-da47-20c7ce610ww2","content":{"type":"text","text":"2️⃣ *RESULTADO 2*\n\n▪️SatO2 < 94%\n▪️FR > 22\n▪️PA < 90/60\n\n▪️⚠️ Evidencia de disfunción orgánica\n▪️👴🏻 Edad > 60\n▪️⚠️ Presencia de factores de riesgo\n▪️🚫🏚️ Sin posibilidad de aislamiento adecuado en casa.\n\n🤖💬 estimado/a participante, en este caso el paciente debe Ingresar a sala de hospitalización: Si SatO2<94% iniciar oxígeno por cánula a 5L y reevaluar. Iniciar acceso venoso periférico."},"options":[{"type":"text","title":"ENTIENDO","iconurl":"","id":"61cs55e6-a6cc7-8901-bfd3-77ee2840c52d","isDuplicate":false,"name":"user"}]}								
+														labelc1_user6:ENTIENDO 1
+															labelc1_bot9:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"lqqa73db-b86d-e4a1-CC47-11c7ce6ppb92","content":{"type":"text","text":"👏🏼 estimado/a participante,has terminado con éxito el tema *1️⃣ Importancia de sistemas de evaluación de acuerdo a gravedad y riesgos*\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"OK","iconurl":"","id":"6eesd99e6-a687-8901-bfd3-698bbqqoc52d","isDuplicate":false,"name":"user"}]}
+																labelc1_user7:OK 1
+																	labelc1_bot10:✅ Tú progreso se guardó con éxito, ahora puedes continuar al curso *2️⃣ Uso de oxígeno en injuria pulmonar y SDRA por SARS Cov 2.:continue
+																		labelc1_bot11:🤖💬 estimado/a participante, ¿a dónde quieres ir?[[MENÚ PRINCIPAL,SIGUIENTE TEMA]]
+																			labelc1_user8:MENÚ PRINCIPAL 1
+																				labelc1_bot12:!Vamos!:call default.ListaRutas
+																			labelc1_user9:SIGUIENTE TEMA 2
+																				labelc1_bot13:!Vamos!:call default.R4Curso2													
+			
+[R4Curso2]
+   labelc2_bot1:Bienvenido al curso 2️⃣ *USO DE OXÍGENO EN INJURIA PULMONAR Y SDRA POR SARS COV 2*:continue
+		labelc2_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 2","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc2_user1:Empezar Tema 2 1
+				labelc2_bot3:OK 👍:continue
+					labelc2_bot4:🤖💬 estimado/a participante, ¿te has preguntado cómo usar el oxígeno?, a continuación veremos las *reglas generales*[[OK]]
+						labelc2_user2:OK 1
+							labelc2_bot5:{"name":"quickreply","type":"quick_reply","alias":"Reglas","msgid":"e15a7ddb-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🗒️ *REGLAS GENERALES*\n\n▪️☝️ estimado/a participante, el *oxígeno medicinal no hace daño*, la hipoxemia sí.\n\n▪️🩸 La saturación de la hemoglobina es una excelente herramienta para valorar el estado de la oxigenación de los tejidos.\n\n▪️💨🌊 A nivel del mar\nSat O2 > 92-94% debe ser considerado como un objetivo general.\n\n▪️🏔️ En zonas de altura se deben utilizar valores de Sat O2 diferentes."},"options":[{"type":"text","title":"ENTIENDO","iconurl":"","id":"61csd4e6-a687-8901-bfd3-6ffa2840c52d","isDuplicate":false,"name":"user"}]}
+								labelc2_user3:ENTIENDO 1
+									labelc2_bot6:https://drive.google.com/file/d/1S3xit4S-lEHcVLDPiMdUAMcyvGRFj-zt/view:continue
+										labelc2_bot7:estimado/a participante, hablando de altura, en la siguiente imagen que te enviaré veamos cómo *varía la saturación de oxígeno con la altitud*.\n\nCuando termines de visualizar, ✍️ escribe *OK* para continuar.
+											labelc2_user4:OK|Ok|ok
+												labelc2_bot8:estimado/a participante, ¿sabes cómo y cuánto oxígeno dar?[[SÍ,NO]]
+													labelc2_user5:SÍ 1
+														labelc2_bot9:¡Muy bien, estimado/a participante! 🥳 A continuación repasaremos estos datos:goto labelc2_bot10
+													labelc2_user6:NO 2
+														labelc2_bot10:😄 estimado/a participante, estamos aquí para aprender:continue
+															labelc2_bot11:{"name":"quickreply","type":"quick_reply","alias":"Oxigeno","msgid":"e15a7ddb-b86d-e4a1-da47-2667ce610b11","content":{"type":"text","text":"▪️La saturación de O2 es el parámetro a seguir.\n\n▪️Flujos mayores a 5-10 L por minuto implican un estado respiratorio delicado.\n\n▪️Cánulas binasales y máscaras simples son buenas medidas iniciales de manejo.\n\n▪️La vigilancia cercana es fundamental."},"options":[{"type":"text","title":"ENTIENDO","iconurl":"","id":"6ffsd4e6-a633-8901-bfd3-6ffa2840c52d","isDuplicate":false,"name":"user"}]}
+																labelc2_user7:ENTIENDO 1
+																	labelc2_bot12:https://drive.google.com/file/d/1sOueKx21V7ofnqf49dFiTj4zbZleM5Oo/view:continue
+																		labelc2_bot13:🤖💬 estimado/a participante, en la siguiente imagen conocerás el protocolo clínico para la administración de oxígeno.\n\nCuando termines de visualizar, ✍️ escribe *OK* para continuar.
+																			labelc2_user8:OK|Ok|ok
+																				labelc2_bot14:{"name":"quickreply","type":"quick_reply","alias":"Uso","msgid":"e15azzdb-b86d-e4a1-da47-2667ce610b11","content":{"type":"text","text":"😷  *USO DE OXÍGENO DE COVID 19*\n\n▪️La hipoxemia se debe tratar siempre.\n\n▪️Se debe *escalar* en los *dispositivos de oxígeno* para mantener una saturación de O2 adecuada.\n\n▪️Flujos *altos* de oxígeno _(mayores a 10 L/min)_ son indicador de enfermedad severa y poco probables de ser manejados adecuadamente en niveles de atención primarios."},"options":[{"type":"text","title":"ME QUEDA CLARO","iconurl":"","id":"6ffsd4e6-a443-8901-bfd3-6ffa2840c52d","isDuplicate":false,"name":"user"}]}
+																					labelc2_user9:ME QUEDA CLARO 1
+																						labelc2_bot15:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"lqqa73db-b86d-e4a1-CC47-11c7ce6ppb92","content":{"type":"text","text":"👏🏼 estimado/a participante,has terminado con éxito el tema *2️⃣ Uso de oxígeno en injuria pulmonar y SDRA por SARS Cov 2*\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"OK","iconurl":"","id":"6eesd99e6-a687-8901-bfd3-698bbqqoc52d","isDuplicate":false,"name":"user"}]}
+																							labelc2_user10:OK 1
+																								labelc2_bot16:✅ Tú progreso se guardó con éxito, ahora puedes continuar al curso *3️⃣ Importancia de la posición prona*.:continue
+																									labelc2_bot17:🤖💬 estimado/a participante, ¿a dónde quieres ir?[[MENÚ PRINCIPAL,SIGUIENTE TEMA]]
+																										labelc2_user11:MENÚ PRINCIPAL 1
+																											labelc2_bot18:!Vamos!:call default.ListaRutas
+																										labelc2_user12:SIGUIENTE TEMA 2
+																											labelc2_bot19:!Vamos!:call default.R4Curso3		
+																						
+[R4Curso3]
+   labelc3_bot1:Bienvenido al curso 3️⃣ *IMPORTANCIA DE LA POSICIÓN PRONA*:continue
+		labelc3_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 3","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc3_user1:Empezar Tema 3 1
+				labelc3_bot3:Claro que sí  🤓:continue
+					labelc3_bot4:{"name":"quickreply","type":"quick_reply","alias":"Sabias","msgid":"e15a73db-b8qq-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤖💬 estimado/a participante, ¿sabías qué...?\n\nCuando una persona está echada boca arriba, áreas del pulmón se ven comprimidas por el efecto del peso. *La posición prona* es capaz de *expandir los segmentos pulmonares* que se encuentran comprimidos cuando se libera del peso de las estructuras que lo comprimen."},"options":[{"type":"text","title":"SÍ, LO SABÍA🤓","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a284ww52d","isDuplicate":false,"name":"user"},{"type":"text","title":"NO LO SABÍA 😯","iconurl":"","id":"61csd4e6-a687-8901-brr3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+						labelc3_user2:SÍ, LO SABÍA🤓 1|NO LO SABÍA 😯 2
+							labelc3_bot5:https://drive.google.com/file/d/149GhPDzzIOIn7pfUi8qgBwrkSZH9UvwJ/view:continue
+								labelc3_bot6:🤖💬 estimado/a participante, para entender mejor la posición prona, te invito a visualizar la imagen que te enviaré.\n\nCuando termines de visualizar, ✍️ escribe *OK* para continuar.
+									labelc3_user3:OK|Ok|ok
+										labelc3_bot7:https://drive.google.com/file/d/1Z_9ZQaEIwJ1ixwKp6NWPRWtbzoFM_omQ/view:continue
+											labelc3_bot8:☝️🤓 Ante la escasez de recursos, como camas de cuidados intensivos, se empezó a utilizar la posición prona, no solo en pacientes en el respirador mecánico, sino también *con pacientes despiertos*. Es así que hoy es práctica común el uso de esta medida adicional al uso clínico de oxígeno.[[YA VEO😯,LO SABÍA 😎]]
+												labelc3_user4:YA VEO😯 1|LO SABÍA😎 2
+													labelc3_bot9:🤖💬 estimado/a participante, la pronación es un procedimiento probado en pacientes con SDRA en VMI hace varios años.[[YA VEO🤔]]
+														labelc3_user5:YA VEO🤔 1
+															labelc3_bot10:{"name":"quickreply","type":"quick_reply","alias":"Covic","msgid":"e1ss73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"Además, durante la pandemia por la Covid 19 se ha obtenido evidencia que muestra que la pronación *ayuda a mejorar la oxigenación en pacientes con injuria pulmonar e hipoxemia sin VMI* (ventilación mecánica invasiva).\n\n🤖💬 estimado/a participante, debes tener en cuenta que este procedimiento requiere la colaboración del paciente."},"options":[{"type":"text","title":"OK😯","iconurl":"","id":"6qqsd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+																labelc3_user6:OK😯 1
+																	labelc3_bot11:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"lqqa73db-b86d-e4a1-CC47-11c7ce6ppb92","content":{"type":"text","text":"👏🏼 estimado/a participante, ¡ya culminaste la lección 4 *Pautas del manejo inicial de oxígeno en la injuria pulmonar por Covid 19*!\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"OK","iconurl":"","id":"6eesd99e6-a687-8901-bfd3-698bbqqoc52d","isDuplicate":false,"name":"user"}]}
+																		labelc3_user7:OK 1
+																			labelc3_bot12:✅ Tú progreso se guardó con éxito.:continue
+																				labelc3_bot13:🤖💬 estimado/a participante, es momento de dar tu evaluación. ¡Mucha suerte! 😊[[IR A EVALUACIÓN]]
+																					labelc3_user8:IR A EVALUACIÓN 1
+																						labelc3_bot14:!Vamos!:call default.R4Evaluacion
+														
+[R4Evaluacion]
+   labeleva_bot1:Bienvenido a la *EVALUACIÓN* de la Ruta 4:continue
+   		labeleva_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Evaluación","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labeleva_user1:Empezar Evaluación 1
+				labeleva_bot3:🤩 ¡Mucha suerte, estimado/a participante!:continue
+					labeleva_bot4:1️⃣ estimado/a participante, con respecto al manejo de oxígeno en personas hospitalizadas por cuadros de hipoxemia secundaria a un proceso pulmonar infeccioso, se recomienda que:\n✍️ *Escribe la opción de tu respuesta: A, B, C o D.*\n\n*A.* Se debe reevaluar periódicamente la necesidad de oxígeno medicinal siguiendo la saturación de hemoglobina.\n\n*B.* Una vez iniciada una terapia de oxígeno, esta no debe variar por 48 horas.\n\n*C.* Para retirar el oxígeno a un paciente se requiere siempre de un AGA.\n\n*D.* Si un paciente no mejora sus requerimientos de oxígeno en las primeras 24 horas debe considerarse el inicio de antibióticos.
+						labeleva_user2:A|a
+							labeleva_bot5:✅ 🥳 ¡Correcto, estimado/a participante!:goto labeleva_bot6
+						labeleva_user3:B|b|C|c|D|d
+							labeleva_bot6:😳 ¡Ups!, estimado/a participante, la respuesta correcta es *A.*:continue
+								labeleva_bot7:2️⃣ Un paciente hospitalizado en una sala común con neumonía por Covid 19 incrementa sus requerimientos de oxígeno hasta llegar a una máscara de reservorio en las primeras 48 horas de hospitalización. Está en posición prona y la saturación se logra mejorar a 94%. A seguir se debería considerar:\n✍️ *Escribe la opción de tu respuesta: A, B, C o D.*\n\n*A.* De ser posible transferencia a una unidad de cuidados intensivos para monitoreo y manejo.\n\n*B.* De ser posible transferencia a una unidad de cuidados intensivos para monitoreo y manejo solo si un AGA control muestra deterioro.\n\n*C.* De ser posible transferencia a una unidad de cuidados intensivos para monitoreo y manejo, solo si un AGA control y una radiografía muestran deterioro.\n\n*D.* Observar por 12 horas más y ver la evolución.
+									labeleva_user4:A|a
+										labeleva_bot8:✅ 🤩 ¡Excelente, estimado/a participante!:goto labeleva_bot9
+									labeleva_user5:B|b|C|c|D|d
+										labeleva_bot9:😳 ¡Ups!, estimado/a participante, la respuesta correcta es *A.*:continue
+											labeleva_bot10:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"e1cc73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤖💬 ¡Felicitaciones, estimado/a participante!\nYa terminaste de dar la evaluación del la *RUTA 4 - Pautas del manejo inicial de oxígeno en la injuria pulmonar por Covid 19*. \n\nAhora regresaremos al menú principal, donde podrás continuar con la ruta 3, o volver a llevar cualquier otra ruta."},"options":[{"type":"text","title":"CHAU 👋","iconurl":"","id":"61csd4e6-a687-8901-22d3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"OK","iconurl":"","id":"61csd4e6-a687-8901-22d3-698a28cc0c52d","isDuplicate":false,"name":"user"}]}
+												labeleva_user6:CHAU 👋 1|OK 2
+													laveleva_bot11:!Hasta luego!👋:call default.ListaRutas
+
+[Ruta5]
+	labelr5_bot1: Estos son los cursos que componen la Ruta 5:\n\n1️⃣ *OXÍGENO MEDICINAL*\n2️⃣ *OXÍMETRO DE PULSOS*\n3️⃣ *INTERFASES Y SISTEMAS DE OXÍGENO*\n4️⃣ *CONCENTRADORES DE OXÍGENO*\n5️⃣ *EVALUACIÓN*\n\nEscribe el número de la ruta que te gustaría llevar ✏
+		labelr5_user1:1
+			labellr_bot1:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R5Curso1
+		labelr5_user2:2
+			labellr_bot2:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R5Curso2
+		labelr5_user3:3
+			labellr_bot3:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R5Curso3
+		labelr5_user4:4
+			labellr_bot4:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R5Curso4
+		labelr5_user5:5
+			labellr_bot5:¡Buena elección!🙌|¡Excelente elección!🙌|¡Buena alternativa!🙌:call default.R5Evaluacion
+
+[R5Curso1]
+   labelc1_bot1:Bienvenido al curso 1️⃣ *OXÍGENO MEDICINAL*:continue
+		labelc1_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 1","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc1_user1:Empezar Tema 1 1
+				labelc1_bot3:😁 Comencemos con un pregunta:continue
+					labelc1_bot4:🤖💬 estimado/a participante, ¿sabes cómo se obtiene el oxígeno medicinal?[[SÍ,NO]]
+						labelc1_user2:SÍ 1
+							labelc1_bot5:¡Felicitaciones, estimado/a participante! 😁 ciertamente el oxígeno medicinal ☝️ *Se obtiene del aire ambiental*:goto labelc1_bot6
+						labelc1_user3:NO 2
+							labelc1_bot6:🤓💬 Te cuento estimado/a participante, el oxígeno medicinal ☝️ *Se obtiene del aire ambiental*:continue
+								labelc1_bot7:{"name":"quickreply","type":"quick_reply","alias":"Concentracion","msgid":"e15113db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤖💬 Internacionalmente es aceptable a concentraciones >90%.\n\nestimado/a participante, hay *dos* formas de separar el oxígeno:\n\n▪️Destilación a muy bajas temperaturas (separación criogénica).\n\nSeparación por comprensión y adsorción."},"options":[{"type":"text","title":"YA VEO😯","iconurl":"","id":"6mmsd4e6-a687-8901-bfd3-698a2840c33d","isDuplicate":false,"name":"user"},{"type":"text","title":"LO SÉ🤓","iconurl":"","id":"6mmsd4e6-amm7-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+									labelc1_user4:YA VEO😯 1|LO SÉ🤓 2
+										labelc1_bot8:¡Muy bien! Ahora veamos en qué consiste la:continue
+											labelc1_bot9:{"name":"quickreply","type":"quick_reply","alias":"Destilacion","msgid":"pp5113db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🧊🥶 *Destilación Criogénica*\n\n▪️Destilación a muy bajas temperaturas.\n\n▪️Oxígeno y nitrógeno tienen puntos de ebullición diferentes (N-193 °C O2 -183 °C).\n\n▪️Se bajan temperaturas hasta el punto que el oxígeno es líquido y el nitrógeno es aún gas.\n\n▪️Costoso y produce un alto grado de pureza (>99%)."},"options":[{"type":"text","title":"ENTIENDO 🤔","iconurl":"","id":"6mmsd4e6-a687-8901-bfd3-698a2000c33d","isDuplicate":false,"name":"user"},{"type":"text","title":"CONTINUAR","iconurl":"","id":"6m00d4e6-amm7-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+												labelc1_user5:ENTIENDO 🤔 1|CONTINUAR 2
+													labelc1_bot10:https://drive.google.com/file/d/19Txb7ReS7kwXYH9GEOOOnWwluNec5igO/view:continue
+														labelc1_bot11:{"name":"quickreply","type":"quick_reply","alias":"Compresion","msgid":"pp5113db-b11d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"*Compresión y adsorción (PSA)*\n\n▪️Se comprime el aire ambiental y filtra a través de un mineral compuesto de aluminio, silicio y oxígeno (Zeolita 5A).\n\n▪️Este mineral adsorbe partículas de nitrógeno y deja pasar oxígeno.\n\n🤓💬 Así es como funcionan los concentradores."},"options":[{"type":"text","title":"YA VEO🤓","iconurl":"","id":"6m0mm4e6-amm7-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+															labelc1_user6:YA VEO🤓 1
+																labelc1_bot12:🤖💬 estimado/a participante, la producción de oxígeno medicinal obtenida por cualquiera de las dos formas es luego *almacenado en depósitos (cilindros/tanques 🛢️) a presión*.[[OK😯,AHORA LO SÉ💡]]
+																	labelc1_user7:OK😯 1|AHORA LO SÉ💡 2
+																		labelc1_bot13:{"name":"quickreply","type":"quick_reply","alias":"Tanques","msgid":"pp511qqb-b11d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤓🛢️🚰 Éstos tanques/depósitos a presión pueden ser conectados a cañerías o usados para llenar balones.\n\nRecuerda, los concentradores portátiles producen continuamente oxígeno de 90-96% de pureza hasta cierto flujo (usualmente 5-10 L/min)."},"options":[{"type":"text","title":"ENTIENDO","iconurl":"","id":"6m0mm4e6-amm7-89cc-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+																			labelc1_user8:ENTIENDO 1
+																				labelc1_bot14:*Uso de oxígeno medicinal*\n\n▪️Se administra un flujo de oxígeno medicinal a través de la interfase.\n\n▪️En la mayoría de casos implica una mezcla con aire Ambiental.\n\n▪️Incrementa la cantidad de oxígeno que entra a los pulmones.\n\nPara entenderlo mejor mira la imagen que te enviaré, cuando termines ✍️ escribe *OK*.:continue
+																					labelc1_bot15:https://drive.google.com/file/d/1FfxPtDURTf0FJaB5dgMBckcAfO9ydEkz/view
+																						labelc1_user9:OK|Ok|ok
+																							labelc1_bot16:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"lqqa73db-b86d-e4a1-CC47-11c7ce6ppb92","content":{"type":"text","text":"👏🏼 estimado/a participante,has terminado con éxito el tema *1️⃣ Oxigeno medicinal*\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"OK","iconurl":"","id":"6eesd99e6-a687-8901-bfd3-698bbqqoc52d","isDuplicate":false,"name":"user"}]}
+																								labelc1_user10:OK 1
+																									labelc1_bot17:✅ Tú progreso se guardó con éxito, ahora puedes continuar al curso *2️⃣ Oxímetro de pulsos*.:continue
+																										labelc1_bot18:🤖💬 estimado/a participante, ¿a dónde quieres ir?[[MENÚ PRINCIPAL,SIGUIENTE TEMA]]
+																											labelc1_user11:MENÚ PRINCIPAL 1
+																												labelc1_bot19:!Vamos!:call default.ListaRutas
+																											labelc1_user12:SIGUIENTE TEMA 2
+																												labelc1_bot20:!Vamos!:call default.R5Curso2																
+																																
+[R5Curso2]
+   labelc2_bot1:Bienvenido al curso 2️⃣ *OXÍMETRO DE PULSOS*:continue
+		labelc2_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 2","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc2_user1:Empezar Tema 2 1
+				labelc2_bot3:¡Genial! Empecemos ahora mismo 😎:continue
+					labelc2_bot4:{"name":"quickreply","type":"quick_reply","alias":"Oximetro","msgid":"e15a73db-b86d-e4a1-da47-2xx7ce610b92","content":{"type":"text","text":"🤖💬 estimado/a participante, un oxímetro de pulso *mide* directamente el porcentaje de *oxihemoglobina* con respecto al total.\n\nSe basa en la propiedades de absorción de luz de la molécula de hemoglobina."},"options":[{"type":"text","title":"ENTIENDO🤔","iconurl":"","id":"61csd4e6-a687-uu01-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+						labelc2_user2:ENTIENDO🤔 1
+							labelc2_bot5:🩸☀️ En ese sentido, la hemoglobina absorbe la luz de diferente forma si está unida al oxígeno.\n\n▪️La oxihemoglobina absorbe *más luz infrarroja y menos luz roja*.\n\n▪️La deoxihemoglobina hace *lo contrario*.\n\nPara entenderlo mejor mira la gráfica que te enviaré, cuando termines ✍️ escribe *OK*.:continue
+								labelc2_bot6:https://drive.google.com/file/d/1jK8a-e0-Hh02v69Y1ueyY9gIpur7c1YI/view
+									labelc2_user3:OK|Ok|ok
+										labelc2_bot7:https://drive.google.com/file/d/1hkc9vBkVCFJXkhHBE32qOukV9qII4b3G/view:continue
+											labelc2_bot8:{"name":"quickreply","type":"quick_reply","alias":"Fuentes","msgid":"e15a7xxb-b86d-e4a1-da47-2xx7ce610b92","content":{"type":"text","text":"En el oxímetro existen las dos fuentes de luz: *Roja 660 nm e infrarroja de 940 nm*.\n\n🤖💬 Con las dos mediciones el equipo calcula la diferencia y el porcentaje de oxihemoglobina. Esta tecnología inventada hace casi 50 años, pero los microprocesadores han hecho posible su disponibilidad."},"options":[{"type":"text","title":"YA VEO🤔","iconurl":"","id":"61csd4e6-qq87-uu01-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+												labelc2_user4:YA VEO🤔 1
+													labelc2_bot9:{"name":"quickreply","type":"quick_reply","alias":"Oximetria","msgid":"e15mmxxb-b86d-e4a1-da47-2xx7ce610b92","content":{"type":"text","text":"estimado/a participante, la oximetría tiene *limitaciones*, vamos a conocerlas junt@s:\n\n▪️🥶 Hipoperfusión (hipotensión, shock, hipotermia, frialdad, Raynaud).\n\n▪️💅 Esmalte de uñas.\n\n▪️🥶 Movimiento excesivo (tremor primario, escalofríos).\n\n▪️🩸 Hemoglobinas anormales.\n\n▪️🤢 Intoxicación por CO (valores falsamente altos)."},"options":[{"type":"text","title":"ENTIENDO🤓","iconurl":"","id":"6144d4e6-qq87-uu01-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+														labelc2_user5:ENTIENDO🤓 1
+															labelc2_bot10:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"lqqa73db-b86d-e4a1-CC47-11c7ce6ppb92","content":{"type":"text","text":"👏🏼 estimado/a participante,has terminado con éxito el tema *2️⃣ Oxímetro de pulsos*\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"OK","iconurl":"","id":"6eesd99e6-a687-8901-bfd3-698bbqqoc52d","isDuplicate":false,"name":"user"}]}
+																labelc2_user7:OK 1
+																	labelc2_bot11:✅ Tú progreso se guardó con éxito, ahora puedes continuar al curso *3️⃣ Interfases y sistemas de oxígeno*.:continue
+																		labelc2_bot12:🤖💬 estimado/a participante, ¿a dónde quieres ir?[[MENÚ PRINCIPAL,SIGUIENTE TEMA]]
+																			labelc2_user8:MENÚ PRINCIPAL 1
+																				labelc2_bot13:!Vamos!:call default.ListaRutas
+																			labelc2_user9:SIGUIENTE TEMA 2
+																				labelc2_bot14:!Vamos!:call default.R5Curso3
+																								
+[R5Curso3]
+   labelc3_bot1:Bienvenido al curso 3️⃣ *INTERFASES Y SISTEMAS DE OXÍGENO*:continue
+		labelc3_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 3","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc3_user1:Empezar Tema 3 1
+				labelc3_bot3:🤓 ¡Bien! Empecemos ahora:continue
+					labelc3_bot4:https://drive.google.com/file/d/1M1XXxNTggOscg_vJxW4DtWDpy2hx3Iks/view:continue
+						labelc3_bot5:estimado/a participante, te invito a conocer las *interfaces para administrar oxígeno en el primer nivel de atención*\n\nCuando termines de visualizar la imagen de las interfases, ✍️ escribe *OK*.
+							labelc3_user2:OK|Ok|ok
+								labelc3_bot6:🤖💬 estimado/a participante, ¿deseas ver un ejemplo del uso de las interfaces para administrar oxígeno?[[SÍ,NO]]
+									labelc3_user3:SÍ 1
+										labelc3_bot7:¡Perfecto! estimado/a participante, cuando termines de visualizar el video, ✍️ escribe *OK*.\n\nhttps://youtu.be/iPdosCjQYCg
+											labelc3_user4:OK|Ok|ok
+												labelc3_bot8:!Sigamos!:goto labelc3_bot10
+									labelc3_user5:NO 2
+										labelc3_bot9:Entiendo:continue
+											labelc3_bot10:estimado/a participante, Ahora conozcamos los::continue
+												labelc3_bot11:{"name":"quickreply","type":"quick_reply","alias":"Sistemas","msgid":"e15kk3db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"*SISTEMAS DE OXÍGENO*\n\n💨👆 1️⃣ *Oxígeno de alto flujo* _(cañerías, balones y concentradores combinados)_\n\n▪️Hasta 60 L/min _(estándar hospitalario)._\n\n▪️Las cánulas de alto flujo y ventiladores requieren de flujos usualmente sobre 30 L/min _(cañerías usualmente)_.\n\n▪️Máscaras de reservorio 10-15 L/min.💨"},"options":[{"type":"text","title":"CONTINUAR","iconurl":"","id":"61csd4e6-a687-8901-bfd3-6xxa2840c52d","isDuplicate":false,"name":"user"}]}
+													labelc3_user6:CONTINUAR 1
+														labelc3_bot12:{"name":"quickreply","type":"quick_reply","alias":"Oxigeno","msgid":"e15kk3db-116d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"💨👇 2️⃣ *Oxígeno a bajo flujo*\n\n▪️Balones y concentradores.\n\n▪️Concentradores dan flujos hasta 5-10 L/min."},"options":[{"type":"text","title":"YA VEO🤔","iconurl":"","id":"61csd4e6-a687-8901-bfd3-6xxa28ppc52d","isDuplicate":false,"name":"user"}]}
+															labelc3_user7:YA VEO🤔 1
+																labelc3_bot13:🤖💬 estimado/a participante, el oxígeno se puede obtener de estas dos formas, luego de ello se utilizará::continue
+																	labelc3_bot14:{"name":"quickreply","type":"quick_reply","alias":"Obtener","msgid":"e15kk3db-1zzd-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🏥 *FUERA O DENTRO DEL HOSPITAL*, mediante:\n▪️Plantas de compresión\n▪️Plantas de crio-destilación\n\n👨‍⚕️🥼 *EN SALAS DE HOSPITALIZACIÓN*, mediante:\n▪️Concentradores\n▪️Cilindros/balones\n▪️Cañerías de alta presión\n\n🤒 *EN PACIENTES,* mediante:\n▪️Cánulas, máscaras\n▪️CPAP\n▪️Ventiladores\n▪️Cánulas de alto flujo"},"options":[{"type":"text","title":"ME QUEDA CLARO","iconurl":"","id":"6mmsd4e6-a687-8901-bfd3-6xxa28ppc52d","isDuplicate":false,"name":"user"}]}
+																		labelc3_user8:ME QUEDA CLARO 1
+																			labelc3_bot15:{"name":"quickreply","type":"quick_reply","alias":"Formas","msgid":"e1mmk3db-1zzd-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤖💬 Las formas de dar oxígeno (interfases) deben ir de la mano con las *disponibilidad de recursos*.\n\n☝️ estimado/a participante, recuerda que ante un aumento en el requerimiento de oxígeno no solo se debe buscar una fuente con mayor flujo, también debes considerar escalar en el nivel de atención."},"options":[{"type":"text","title":"ENTIENDO🤓","iconurl":"","id":"6m00d4e6-a687-8901-bfd3-6xxa28ppc52d","isDuplicate":false,"name":"user"}]}
+																				labelc3_user9:ENTIENDO🤓 1
+																					labelc3_bot16:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"lqqa73db-b86d-e4a1-CC47-11c7ce6ppb92","content":{"type":"text","text":"👏🏼 estimado/a participante,has terminado con éxito el tema *3️⃣ Interfases y sistemas de oxígeno*\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"OK","iconurl":"","id":"6eesd99e6-a687-8901-bfd3-698bbqqoc52d","isDuplicate":false,"name":"user"}]}
+																						labelc3_user10:OK 1
+																							labelc3_bot17:✅ Tú progreso se guardó con éxito, ahora puedes continuar al curso *4️⃣ Concentradores de oxígeno*.:continue
+																								labelc3_bot18:🤖💬 estimado/a participante, ¿a dónde quieres ir?[[MENÚ PRINCIPAL,SIGUIENTE TEMA]]
+																									labelc3_user11:MENÚ PRINCIPAL 1
+																										labelc3_bot19:!Vamos!:call default.ListaRutas
+																									labelc3_user12:SIGUIENTE TEMA 2
+																										labelc3_bot20:!Vamos!:call default.R5Curso4
+																																				
+[R5Curso4]
+   labelc4_bot1:Bienvenido al curso 4️⃣ *CONCENTRADORES DE OXÍGENO*:continue
+		labelc4_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Tema 4","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labelc4_user1:Empezar Tema 4 1
+				labelc4_bot3:😁 Por supuesto:continue
+					labelc4_bot4:https://drive.google.com/file/d/112LtGkMNwbEX733xKD7FKa2MLWeLejP4/view:continue
+						labelc4_bot5:🤖💬 estimado/a participante, el oxígeno de concentradores y plantas PSA es *seguro y efectivo*.[[ENTIENDO]]
+							labelc4_user2:ENTIENDO 1
+								labelc4_bot6:🤓 Los concentradores tienen diversas formas de uso. A continuación, se presentará una imagen donde podrás conocer las diferentes interfases que se pueden realizar con un concentrador de oxígeno. ⬇️\n\nCuando termines de visualizar, ✍️ escribe *OK* para continuar.:continue
+									labelc4_bot7:https://drive.google.com/file/d/1i7uS4f6cOjf-pbEve7iHAhhy3D3x-X2l/view
+										labelc4_user3:OK|Ok|ok
+											labelc4_bot8:💧🪣 estimado/a participante, no olvides que los concentradores *requieren de cuidados y mantenimiento.*\n\nEn la imagen que te enviaré, podrás ver cómo hacerlo.\n\nCuando termines de visualizar, ✍️ escribe *OK* para continuar.:continue
+												labelc4_bot9:https://drive.google.com/file/d/1B2a71ORwDeKGDzL_HI-YI91NuEkjvnha/view
+													labelc4_user4:OK|Ok|ok
+														labelc4_bot10:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"lqqa73db-b86d-e4a1-CC47-11c7ce6ppb92","content":{"type":"text","text":"👏🏼 estimado/a participante,¡ya culminaste la lección *5 Herramientas básicas para el uso clínico de oxígeno*\n\n_*100 % de progreso*_\n██████████"},"options":[{"type":"text","title":"OK","iconurl":"","id":"6eesd99e6-a687-8901-bfd3-698bbqqoc52d","isDuplicate":false,"name":"user"}]}
+															labelc4_user5:OK 1
+																labelc4_bot11:✅ Tú progreso se guardó con éxito.:continue
+																	labelc4_bot12:🤖💬 estimado/a participante, es momento de dar tu evaluación. ¡Mucha suerte! 😊[[IR A EVALUACIÓN]]
+																		labelc4_user6:IR A EVALUACIÓN 1
+																			labelc4_bot13:!Vamos!:call default.R5Evaluacion
+
+[R5Evaluacion]
+   labeleva_bot1:Bienvenido a la *EVALUACIÓN* de la Ruta 5:continue
+   		labeleva_bot2:{"name":"quickreply","type":"quick_reply","alias":"Empezar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"⏱️ *Duración del tema:* \n5 minutos\n\n🤖 *Tip:* \n▪️Puedes retomar el aprendizaje en cualquier momento\n▪️Puedes escribir *SALIR* en cualquier momento para regresar al menu principal\n\n📧 *Correo para:*\n\n*Consultas técnicas o sobre el curso* ⬇️\nuiccora_ses@pih.org"},"options":[{"type":"text","title":"Empezar Evaluación","iconurl":"","id":"61csd4e6-a687-8901-bfd3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+			labeleva_user1:Empezar Evaluación 1
+				labeleva_bot3:¡Tú puedes, estimado/a participante! 😎:continue
+					labeleva_bot4:1️⃣ Con respecto al oxígeno medicinal, ✍️ *escribe la alternativa incorrecta: A, B, C o D.*\n\n*A.* El oxígeno obtenido por destilación criogénica da un grado de pureza alto >99%.\n\n*B.* Un oxígeno medicinal de 94% de pureza es igual de eficiente clínicamente que unos de 99% de pureza.\n\n*C.* Los concentradores producen oxígeno por destilación criogénica.\n\n*D.* Las plantas de adsorción por cambio presión (PSA) también conocidas como de compresión son un modo eficiente de obtener oxígeno.
+						labeleva_user2:C|C
+							labeleva_bot5:✅ 🤩 ¡Muy bien, estimado/a participante!:goto labeleva_bot6
+						labeleva_user3:A|a|B|b|D|d
+							labeleva_bot6:estimado/a participante, la respuesta correcta es *C.*\n\nSigue practicando, tú puedes. 😊:continue
+								labeleva_bot7:2️⃣ Respecto a los concentradores de oxígeno, marca la alternativa incorrecta:\n✍️ *Escribe la opción de tu respuesta: A, B, C o D.*\n\n*A.* Son una fuente adecuada de oxígeno medicinal\n\n*B.* Pueden dar flujos altos que permiten el adecuado funcionamiento de dispositivos como cánulas de alto flujo o ventiladores mecánicos\n\n*C.* Requieren de cambio periódico de filtros\n\n*D.* Son útiles para usarse con cánulas nasales simples
+									labeleva_user4:B|b
+										labeleva_bot8:✅ 🥳 ¡Muy bien, estimado/a participante!:goto labeleva_bot9
+									labeleva_user5:A|a|C|c|D|d
+										labeleva_bot9:estimado/a participante, la respuesta correcta es *B.*:continue
+											labeleva_bot10:estimado/a participante, ya terminaste de dar tu evaluación.🤖💬 Muchas gracias por participar[[DE NADA, OK]]
+												labeleva_user6:DE NADA 1|OK 2
+													labeleva_bot11:🤖💬 estimado/a participante, te invito a participar en la modalidad virtual del curso en la Plataforma *Tovuti*.\nIngresa aquí ➡️:continue
+														labeleva_bot12:{"name":"quickreply","type":"quick_reply","alias":"Felicitaciones","msgid":"emmkk3db-116d-e4a1-da47-20c7ce610b92","content":{"type":"text","text":"🤖💬 ¡Felicitaciones,  estimado/a participante!\nYa terminaste de dar la evaluación del la *“RUTA 5 -  Herramientas básicas para el uso clínico de oxígeno”*.\n\n☝️ Si has completado el resto de módulos y evaluaciones, muy pronto recibirás una invitación a la plataforma de e-learning Tovuti, donde podrás llevar una versión más detallada del curso “Uso clínico de oxígeno” de manera asíncrona."},"options":[{"type":"text","title":"OK","iconurl":"","id":"61csd4e6-a687-8901-bfd3-6xxa28ppc52d","isDuplicate":false,"name":"user"}]}
+															label_user7:OK 1
+																labeleva_bot13:estimado/a participante, por favor completa las siguiente encuesta sobre tu experiencia de aprendizaje.[[OK]]
+																	labeleva_user8:OK 1
+																		labeleva_bot14:*1.* ¿Qué tan *útil* te parecieron los temas?\n\n✍️ _Escribe una opción del 1 al 5 ⭐ siendo 5 el máximo puntaje._
+																			labeleva_user9:
+																				labeleva_bot15:*2.* ¿Qué tan *relevante* te parecieron los temas?\n\n✍️ _Escribe una opción del 1 al 5 ⭐ siendo 5 el máximo puntaje._
+																					labeleva_user10:
+																						labeleva_bot16:*3.* ¿Cómo calificarías tu satisfacción dentro de los temas?\n\n✍️ _Escribe una opción del 1 al 5 ⭐ siendo 5 el máximo puntaje._
+																							labeleva_user11:1|2|3
+																								labeleva_bot17:Entiendo, gracias por tu calificación. 😀:goto labeleva_bot18
+																							labeleva_user12:4|5
+																								labeleva_bot18:Me alegra que este curso te haya gustado 😊.:continue
+																									labeleva_bot19:*4.* Dime estimado/a participante, ¿qué es lo que más te gustó de los temas?\n\n✍️ *Escribe la opción de tu respuesta.*\n\n*A.* Claridad\n*B.* Contenido\n*C.* Formato de aprendizaje\n*D.* Canal (WhatsApp)\n*E.* Me gustaría especificar
+																										labeleva_user13:A|a|B|b|C|c|D|d
+																											labeleva_bot20:Gracias estimado/a participante, tu opinión es muy valiosa para mí ❤️.:goto labeleva_bot22
+																										labeleva_user14:E|e
+																											labeleva_bot21:🤩 Estoy ansiosa por saber qué es lo que te gustó.\n💬 *Escribe tu respuesta en un solo mensaje*.
+																												labeleva_user15:
+																													labeleva_bot22:Gracias por responder. 😊:continue
+																														labeleva_bot23:*5.* ¿Qué es lo que *menos te gustó* de los temas?\n✍️ *Escribe la opción de tu respuesta.*\n\n*A.* Claridad\n*B.* Contenido\n*C.* Formato de aprendizaje\n*D.* Canal (WhatsApp)\n*E.* Me gustaría especificar\n*F*. Me gustó todo
+																															labeleva_user16:A|a|B|b|C|c|D|d
+																																labeleva_bot24:Entiendo, seguiré esforzándome para mejorar 🤩.:goto labeleva_user19
+																															labeleva_user17:F|f
+																																labeleva_bot25:¡Genial! 🤩:goto labeleva_user19
+																															labeleva_user18:E|e
+																																labeleva_bot26:Estoy aquí para escucharte. Dime estimado/a participante, ¿qué es lo que no te gustó de esta ruta de aprendizaje? 🤷🏽‍♀️\n💬 *Responde solo en un mensaje.*
+																																	labeleva_user19:
+																																		labeleva_bot27:🤖💬 estimado/a participante, ¿qué otros temas te interesaría aprender?\n\n*A.* Liderazgo\n*B.* Marketing y promoción\n*C.* Atención al cliente\n*D.* Fuentes de financiamiento\n*E.* Especificar otro
+																																			labeleva_user20:A|a|B|b|C|c|D|d
+																																				labeleva_bot28:¡Perfecto! Lo tendré en cuenta.:goto labeleva_user22
+																																			labeleva_user21:E|e
+																																				labeleva_bot29:estimado/a participante, cuéntame, ¿qué otros temas te interesa aprender?\n💬 *Responde solo en un mensaje.*
+																																					labeleva_user22:
+																																						labeleva_bot30:{"name":"quickreply","type":"quick_reply","alias":"Finalizar","msgid":"e15a73db-b86d-e4a1-da47-20c7ce610112","content":{"type":"text","text":"estimado/a participante, gracias por participar en esta encuesta.\n\n🤖💬 Ahora volveremos al *menú principal*."},"options":[{"type":"text","title":"OK","iconurl":"","id":"61csd4e6-a687-8dd1-bfd3-698a2840c52d","isDuplicate":false,"name":"user"},{"type":"text","title":"CHAU 👋","iconurl":"","id":"61csd4e6-a687-8dd1-bqq3-698a2840c52d","isDuplicate":false,"name":"user"}]}
+																																							labeleva_user23:OK 1|CHAU 👋 2
+																																								labeleva_bot31:!Hasta Luego!👋:call default.ListaRutas
+																																																			
+[common]
+Salir:Salir|salir|Exit|exit
+	:call default.ListaRutas
+hi: hola|buenas|hey|hello|buenas tardes|buenas noches|buenos dias
+	:call default.ListaRutas
+Reiniciar:Reiniciar
+	:call default.main
